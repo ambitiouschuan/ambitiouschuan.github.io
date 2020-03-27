@@ -4,14 +4,14 @@
     <title>如何发布hexo文章</title>
     <url>/2020/03/27/%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83hexo%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>测试blog</title>
     <url>/2020/03/27/%E6%B5%8B%E8%AF%95blog/</url>
-    <content><![CDATA[<hr>
-<p>title: 测试blog<br>date: 2020-03-27 14:38:29<br>tags:</p>
-<hr>
-<p>测试</p>
+    <content><![CDATA[<p>测试</p>
 <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><p>软件</p>
 <p>## 二级标题</p>
 <p>代码</p>
@@ -20,13 +20,18 @@
 <p>##### 五级标题</p>
 <p><a href="https://www.baidu.com/index.php?tn=56060048_4_pg&ch=12" target="_blank" rel="noopener">百度</a></p>
 <p>######六级标题</p>
-<pre><code class="bash">@ $$%^<span class="comment">#$#$</span></code></pre>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre><code class="bash"><span class="comment">#include &lt;stdio.h&gt;</span>
-  int main 
-{
-   <span class="built_in">printf</span>(“hello world!”);
- }</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">@ $$%^<span class="comment">#$#$</span></span><br></pre></td></tr></table></figure>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#include &lt;stdio.h&gt;</span></span><br><span class="line">  int main </span><br><span class="line">&#123;</span><br><span class="line">   <span class="built_in">printf</span>(“hello world!”);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
 ]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>

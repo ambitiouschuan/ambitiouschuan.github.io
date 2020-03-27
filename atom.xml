@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-27T08:58:23.525Z</updated>
+  <updated>2020-03-27T15:40:34.007Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,13 +21,15 @@
     <link href="http://yoursite.com/2020/03/27/%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83hexo%E6%96%87%E7%AB%A0/"/>
     <id>http://yoursite.com/2020/03/27/%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83hexo%E6%96%87%E7%AB%A0/</id>
     <published>2020-03-27T08:58:23.000Z</published>
-    <updated>2020-03-27T08:58:23.525Z</updated>
+    <updated>2020-03-27T15:40:34.007Z</updated>
     
     <summary type="html">
     
     </summary>
     
     
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
@@ -35,25 +37,28 @@
     <title>测试blog</title>
     <link href="http://yoursite.com/2020/03/27/%E6%B5%8B%E8%AF%95blog/"/>
     <id>http://yoursite.com/2020/03/27/%E6%B5%8B%E8%AF%95blog/</id>
-    <published>2020-03-27T06:38:29.285Z</published>
-    <updated>2020-03-27T08:29:58.350Z</updated>
+    <published>2020-03-27T06:38:29.000Z</published>
+    <updated>2020-03-27T15:40:13.698Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title: 测试blog<br>date: 2020-03-27 14:38:29<br>tags:</p><hr><p>测试</p><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><p>软件</p><p>## 二级标题</p><p>代码</p><p>###  三级标题</p><p>事物<br>####  四级标题</p><p>##### 五级标题</p><p><a href="https://www.baidu.com/index.php?tn=56060048_4_pg&ch=12" target="_blank" rel="noopener">百度</a></p><p>######六级标题</p><pre><code class="bash">@ $$%^<span class="comment">#$#$</span></code></pre><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre><code class="bash"><span class="comment">#include &lt;stdio.h&gt;</span>  int main {   <span class="built_in">printf</span>(“hello world!”); }</code></pre>]]></content>
+    <content type="html"><![CDATA[<p>测试</p><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><p>软件</p><p>## 二级标题</p><p>代码</p><p>###  三级标题</p><p>事物<br>####  四级标题</p><p>##### 五级标题</p><p><a href="https://www.baidu.com/index.php?tn=56060048_4_pg&ch=12" target="_blank" rel="noopener">百度</a></p><p>######六级标题</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@ $$%^<span class="comment">#$#$</span></span><br></pre></td></tr></table></figure><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;stdio.h&gt;</span></span><br><span class="line">  int main </span><br><span class="line">&#123;</span><br><span class="line">   <span class="built_in">printf</span>(“hello world!”);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;hr&gt;
-&lt;p&gt;title: 测试blog&lt;br&gt;date: 2020-03-27 14:38:29&lt;br&gt;tags:&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;测试&lt;/p&gt;
-&lt;h1 id=&quot;一级标题&quot;&gt;&lt;a href=&quot;#一级标题&quot; class=&quot;headerlink&quot; title=&quot;一级标题&quot;
+        &lt;p&gt;测试&lt;/p&gt;
+&lt;h1 id=&quot;一级标题&quot;&gt;&lt;a href=&quot;#一级标题&quot; class=&quot;headerlink&quot; title=&quot;一级标题&quot;&gt;&lt;/a&gt;一级标题&lt;/h1&gt;&lt;p&gt;软件&lt;/p&gt;
+&lt;p&gt;## 二级标题&lt;/p&gt;
+&lt;p&gt;代码&lt;/p&gt;
+&lt;p&gt;###  三级标题&lt;/p&gt;
+&lt;
       
     
     </summary>
     
     
+    
+      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
