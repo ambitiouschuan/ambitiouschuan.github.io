@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-28T04:48:51.446Z</updated>
+  <updated>2020-03-28T05:57:25.174Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo-添加网站运行时间</title>
+    <link href="http://yoursite.com/2020/03/28/hexo-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/"/>
+    <id>http://yoursite.com/2020/03/28/hexo-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/</id>
+    <published>2020-03-28T05:24:22.628Z</published>
+    <updated>2020-03-28T05:57:25.174Z</updated>
+    
+    <content type="html"><![CDATA[<hr><p>title: hexo-添加网站运行时间<br>date: 2020-03-28 13:24:22<br>tags:  hexo</p><hr><p>这个小功能可以很好的记录自己博客运行的时间，并且可以根据自己需要更改文字。</p><p>在 \themes\next\layout_partial\footer.ejs 文件下添加以下代码<br>（记得修改自己的建站时间！）</p><pre><code class="bash">&lt;span id=<span class="string">"timeDate"</span>&gt;载入天数...&lt;/span&gt;&lt;span id=<span class="string">"times"</span>&gt;载入时分秒...&lt;/span&gt;&lt;script&gt;    var now = new Date();     <span class="keyword">function</span> <span class="function"><span class="title">createtime</span></span>() {         var grt= new Date(<span class="string">"03/01/2020 17:38:00"</span>);//在此处修改你的建站时间，格式：月/日/年 时:分:秒        now.setTime(now.getTime()+250);         days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);         hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);         <span class="keyword">if</span>(String(hnum).length ==1 ){hnum = <span class="string">"0"</span> + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);         mnum = Math.floor(minutes); <span class="keyword">if</span>(String(mnum).length ==1 ){mnum = <span class="string">"0"</span> + mnum;}         seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);         snum = Math.round(seconds); <span class="keyword">if</span>(String(snum).length ==1 ){snum = <span class="string">"0"</span> + snum;}         document.getElementById(<span class="string">"timeDate"</span>).innerHTML = <span class="string">"本站已安全运行 "</span>+dnum+<span class="string">" 天 "</span>;         document.getElementById(<span class="string">"times"</span>).innerHTML = hnum + <span class="string">" 小时 "</span> + mnum + <span class="string">" 分 "</span> + snum + <span class="string">" 秒"</span>;     } setInterval(<span class="string">"createtime()"</span>,250);&lt;/script&gt;</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;p&gt;title: hexo-添加网站运行时间&lt;br&gt;date: 2020-03-28 13:24:22&lt;br&gt;tags:  hexo&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这个小功能可以很好的记录自己博客运行的时间，并且可以根据自己需要更改文字。&lt;/p&gt;
+&lt;p&gt;在 \themes\
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>hexo-卡通图贴添加</title>
