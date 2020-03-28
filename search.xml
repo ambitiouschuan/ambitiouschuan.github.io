@@ -4,7 +4,7 @@
     <title>hexo-添加网站运行时间</title>
     <url>/2020/03/28/hexo-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/</url>
     <content><![CDATA[<hr>
-<p>title: hexo-添加网站运行时间<br>date: 2020-03-28 13:24:22<br>tags:  hexo next</p>
+<p>title: hexo-添加网站运行时间<br>date: 2020-03-28 13:24:22<br>tags:hexo next</p>
 <hr>
 <p>这个小功能可以很好的记录自己博客运行的时间，并且可以根据自己需要更改文字。<br>这个小功能的实现非常的简单，按照如下步骤，就能轻松获取！<br>在 \themes\next\layout_partial\footer.ejs 文件下添加以下代码<br>（记得修改自己的建站时间！）</p>
 <pre><code class="bash">&lt;span id=<span class="string">"timeDate"</span>&gt;载入天数...&lt;/span&gt;&lt;span id=<span class="string">"times"</span>&gt;载入时分秒...&lt;/span&gt;
@@ -30,7 +30,7 @@ setInterval(<span class="string">"createtime()"</span>,250);
     <title>hexo-卡通图贴添加</title>
     <url>/2020/03/28/hexo-%E5%8D%A1%E9%80%9A%E5%9B%BE%E8%B4%B4%E6%B7%BB%E5%8A%A0/</url>
     <content><![CDATA[<hr>
-<p>title: hexo 卡通图贴（看板娘）添加<br>date: 2020-03-28 10:54:06<br>tags:  hexo next </p>
+<p>title: hexo 卡通图贴（看板娘）添加<br>date: 2020-03-28 10:54:06<br>tags:hexo next </p>
 <hr>
 <p>博客美化之卡通图贴，如我的网页右下角就有一只小猫咪（hijiki），撸猫专属，它可以随着你的鼠标光标移动目光，枯燥乏味时还能撸猫，岂不美哉？作为经典博客美化方案，还不赶快学起来？</p>
 <h2 id="hexo美化之–添加卡通图贴"><a href="#hexo美化之–添加卡通图贴" class="headerlink" title="hexo美化之–添加卡通图贴"></a>hexo美化之–添加卡通图贴</h2><p>首先检查站点目录下面的 package.json里是否有<br>“hexo-helper-live2d”: “^3.0.3”，如果已经有的话可以先卸载<br>然后在博客文件（我的是blogs文件夹，取决于你最初搭建网站建立的文件夹名字）右键选择Git Bash Here 进入命令窗口使用命令：</p>

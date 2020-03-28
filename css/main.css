@@ -1253,6 +1253,14 @@ pre .javascript .function {
   -o-transform: rotate(30deg);
   transform: rotate(30deg);
 }
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+}
+.post-body p a:hover {
+  color: #0477ab;
+  text-decoration: underline;
+}
 .use-motion .post-block,
 .use-motion .pagination,
 .use-motion .comments {
@@ -1943,7 +1951,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6309cd;
+  background: #9fd452;
 }
 .links-of-blogroll {
   font-size: 13px;
