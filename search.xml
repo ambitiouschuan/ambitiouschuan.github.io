@@ -6,12 +6,13 @@
     <content><![CDATA[<hr>
 <p>title: hexo 卡通图贴（看板娘）添加<br>date: 2020-03-28 10:54:06<br>tags:hexo</p>
 <hr>
-<pre><code>博客美化之卡通图贴，如我的网页右下角就有一只小猫咪（hijiki），撸猫专属，它可以随着你的鼠标光标移动目光，枯燥乏味时还能撸猫，岂不美哉？作为经典博客美化方案，还不赶快学起来？</code></pre><h2 id="hexo美化之–添加卡通图贴"><a href="#hexo美化之–添加卡通图贴" class="headerlink" title="hexo美化之–添加卡通图贴"></a>hexo美化之–添加卡通图贴</h2><p>首先检查站点目录下面的 package.json里是否有<br>“hexo-helper-live2d”: “^3.0.3”，如果已经有的话可以先卸载<br>然后在博客文件（我的是blogs文件夹，取决于你最初搭建网站建立的文件夹名字）右键选择Git Bash Here 进入命令窗口使用命令：</p>
+<p>博客美化之卡通图贴，如我的网页右下角就有一只小猫咪（hijiki），撸猫专属，它可以随着你的鼠标光标移动目光，枯燥乏味时还能撸猫，岂不美哉？作为经典博客美化方案，还不赶快学起来？</p>
+<h2 id="hexo美化之–添加卡通图贴"><a href="#hexo美化之–添加卡通图贴" class="headerlink" title="hexo美化之–添加卡通图贴"></a>hexo美化之–添加卡通图贴</h2><p>首先检查站点目录下面的 package.json里是否有<br>“hexo-helper-live2d”: “^3.0.3”，如果已经有的话可以先卸载<br>然后在博客文件（我的是blogs文件夹，取决于你最初搭建网站建立的文件夹名字）右键选择Git Bash Here 进入命令窗口使用命令：</p>
 <pre><code class="bash">$  npm install --save hexo-helper-live2d</code></pre>
 <p>等待完成</p>
 <p>选择想要的卡通图贴：各个模型的预览请访问 <a href="https://huaji8.top/post/live2d-plugin-2.0/" target="_blank" rel="noopener">原作者的博客</a></p>
 <p>接下来添加模型文件有两种方案，我使用的是方案一：</p>
-<h3 id="方案一-—简单粗暴添加"><a href="#方案一-—简单粗暴添加" class="headerlink" title="方案一 —简单粗暴添加"></a>方案一 —简单粗暴添加</h3><p>1、直接进入官网下载好所需模型：<br><a href="https://github.com/xiazeyu/live2d-widget-models/tree/master/packages" target="_blank" rel="noopener">图贴模型github官网来源</a></p>
+<h3 id="方案一-简单粗暴添加"><a href="#方案一-简单粗暴添加" class="headerlink" title="方案一   简单粗暴添加"></a>方案一   简单粗暴添加</h3><p>1、直接进入官网下载好所需模型：<br><a href="https://github.com/xiazeyu/live2d-widget-models/tree/master/packages" target="_blank" rel="noopener">图贴模型github官网来源</a></p>
 <p>2、然后打开下载好的live2d-widget-models-master文件夹中的packages文件夹，（live2d-widget-models-master\live2d-widget-models-master\packages）全部复制站点文件中的node_modules文件中</p>
 <p>3、打开站点目录（我的是在blogs文件，不是主题next之类的文件夹）下的 _config.yml 文件，添加如下代码：</p>
 <pre><code class="bash">卡通人物选择
@@ -32,7 +33,7 @@ live2d:
 <pre><code class="bash">$  hexo g</code></pre>
 <p>部署</p>
 <pre><code class="bash">$  hexo d</code></pre>
-<h3 id="方案二-—npm添加"><a href="#方案二-—npm添加" class="headerlink" title="方案二 —npm添加"></a>方案二 —npm添加</h3><p>1、输入以下命令，下载相应的模型，将 packagename 更换成模型名称即可</p>
+<h3 id="方案二-npm添加"><a href="#方案二-npm添加" class="headerlink" title="方案二    npm添加"></a>方案二    npm添加</h3><p>1、输入以下命令，下载相应的模型，将 packagename 更换成模型名称即可</p>
 <pre><code class="bash">$ npm install packagename</code></pre>
 <p>2、打开站点目录（我的是在blogs文件，不是主题next之类的文件夹）下的 _config.yml 文件，添加如下代码：</p>
 <pre><code class="bash">卡通人物选择
