@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>升级博客，我太难了</title>
+    <url>/2020/03/28/%E5%8D%87%E7%BA%A7%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%88%91%E5%A4%AA%E9%9A%BE%E4%BA%86/</url>
+    <content><![CDATA[<hr>
+<p>title: 升级博客，我太难了<br>date: 2020-03-28 17:21:46<br>tags:hexo 升级博客</p>
+<hr>
+<p>为自己记录一下升级，以免出错。才搭建好自己的博客，选好自己较为喜欢的主题，可越发觉得还有一些单调，发现自己所使用的next主题早已有更好看的更改,不改吧，心中还是痒痒的；但那是否，前面所做的所有配置都得一一更改，想来，更改量巨大，且早已忘记之前如何配置，但却想来，还是决心改掉，毕竟现在才搭建不久，还有很多配置还没有更改，若是改掉所有配置之后再做升级，岂不是工作量更大，还是动手吧！</p>
+<h2 id="咋升级"><a href="#咋升级" class="headerlink" title="咋升级"></a>咋升级</h2><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>先备份一下吧！</p>
+<h2 id="升级hexo"><a href="#升级hexo" class="headerlink" title="升级hexo"></a>升级hexo</h2><p>查看博客目录中的package.json文件，记录hexo和一些依赖版本</p>
+<pre><code class="bash">{
+  <span class="string">"name"</span>: <span class="string">"hexo-site"</span>,
+  <span class="string">"version"</span>: <span class="string">"0.0.0"</span>,
+  <span class="string">"private"</span>: <span class="literal">true</span>,
+  <span class="string">"scripts"</span>: {
+    <span class="string">"build"</span>: <span class="string">"hexo generate"</span>,
+    <span class="string">"clean"</span>: <span class="string">"hexo clean"</span>,
+    <span class="string">"deploy"</span>: <span class="string">"hexo deploy"</span>,
+    <span class="string">"server"</span>: <span class="string">"hexo server"</span>
+  },
+  <span class="string">"hexo"</span>: {
+    <span class="string">"version"</span>: <span class="string">"4.2.0"</span>
+  },
+  <span class="string">"dependencies"</span>: {
+    <span class="string">"hexo"</span>: <span class="string">"^4.0.0"</span>,
+    <span class="string">"hexo-asset-image"</span>: <span class="string">"^1.0.0"</span>,
+    <span class="string">"hexo-deployer-git"</span>: <span class="string">"^2.1.0"</span>,
+    <span class="string">"hexo-generator-archive"</span>: <span class="string">"^1.0.0"</span>,
+    <span class="string">"hexo-generator-category"</span>: <span class="string">"^1.0.0"</span>,
+    <span class="string">"hexo-generator-feed"</span>: <span class="string">"^2.2.0"</span>,
+    <span class="string">"hexo-generator-index"</span>: <span class="string">"^1.0.0"</span>,
+    <span class="string">"hexo-generator-searchdb"</span>: <span class="string">"^1.2.0"</span>,
+    <span class="string">"hexo-generator-tag"</span>: <span class="string">"^1.0.0"</span>,
+    <span class="string">"hexo-helper-live2d"</span>: <span class="string">"^3.1.1"</span>,
+    <span class="string">"hexo-lazyload-image"</span>: <span class="string">"^1.0.6"</span>,
+    <span class="string">"hexo-renderer-ejs"</span>: <span class="string">"^1.0.0"</span>,
+    <span class="string">"hexo-renderer-marked"</span>: <span class="string">"^2.0.0"</span>,
+    <span class="string">"hexo-renderer-stylus"</span>: <span class="string">"^1.1.0"</span>,
+    <span class="string">"hexo-server"</span>: <span class="string">"^1.0.0"</span>
+  }
+}</code></pre>
+<p>打开博客根目录，输入：</p>
+<pre><code class="bash">$ npm outdated</code></pre>
+<p>查看哪些依赖和插件需要更新</p>
+<p>果不其然，暂时还没有，毕竟才开始做没几天。</p>
+<p>未完，待续，，，查一波资料再继续，等下捅娄子了，，，</p>
+]]></content>
+  </entry>
+  <entry>
     <title>hexo-添加网站运行时间</title>
     <url>/2020/03/28/hexo-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/</url>
     <content><![CDATA[<hr>

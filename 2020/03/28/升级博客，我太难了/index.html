@@ -90,10 +90,14 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Chuan&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="title: 升级博客，我太难了date: 2020-03-28 17:21:46tags:hexo 升级博客  为自己记录一下升级，以免出错。才搭建好自己的博客，选好自己较为喜欢的主题，可越发觉得还有一些单调，发现自己所使用的next主题早已有更好看的更改,不改吧，心中还是痒痒的；但那是否，前面所做的所有配置都得一一更改，想来，更改量巨大，且早已忘记之前如何配置，但却想来，还是决心改掉，毕竟现">
+<meta property="og:type" content="article">
+<meta property="og:title" content="升级博客，我太难了">
+<meta property="og:url" content="http://yoursite.com/2020/03/28/%E5%8D%87%E7%BA%A7%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%88%91%E5%A4%AA%E9%9A%BE%E4%BA%86/index.html">
 <meta property="og:site_name" content="Chuan&#39;s blog">
+<meta property="og:description" content="title: 升级博客，我太难了date: 2020-03-28 17:21:46tags:hexo 升级博客  为自己记录一下升级，以免出错。才搭建好自己的博客，选好自己较为喜欢的主题，可越发觉得还有一些单调，发现自己所使用的next主题早已有更好看的更改,不改吧，心中还是痒痒的；但那是否，前面所做的所有配置都得一一更改，想来，更改量巨大，且早已忘记之前如何配置，但却想来，还是决心改掉，毕竟现">
+<meta property="article:published_time" content="2020-03-28T09:21:46.552Z">
+<meta property="article:modified_time" content="2020-03-28T09:59:36.150Z">
 <meta property="article:author" content="李文川">
 <meta name="twitter:card" content="summary">
 
@@ -125,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/03/28/升级博客，我太难了/"/>
 
 
 
 
 
-  <title>Chuan's blog</title>
+  <title>升级博客，我太难了 | Chuan's blog</title>
   
 
 
@@ -150,8 +154,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -298,9 +301,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -330,9 +333,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/28/%E5%8D%87%E7%BA%A7%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%88%91%E5%A4%AA%E9%9A%BE%E4%BA%86/" itemprop="url">升级博客，我太难了</a></h1>
+          <h1 class="post-title" itemprop="name headline">升级博客，我太难了</h1>
         
 
         <div class="post-meta">
@@ -382,21 +383,49 @@
       
 
       
-        
-          
-          
-title: 升级博客，我太难了date: 2020-03-28 17:21:46tags:hexo 升级博客
+        <hr>
+<p>title: 升级博客，我太难了<br>date: 2020-03-28 17:21:46<br>tags:hexo 升级博客</p>
+<hr>
+<p>为自己记录一下升级，以免出错。才搭建好自己的博客，选好自己较为喜欢的主题，可越发觉得还有一些单调，发现自己所使用的next主题早已有更好看的更改,不改吧，心中还是痒痒的；但那是否，前面所做的所有配置都得一一更改，想来，更改量巨大，且早已忘记之前如何配置，但却想来，还是决心改掉，毕竟现在才搭建不久，还有很多配置还没有更改，若是改掉所有配置之后再做升级，岂不是工作量更大，还是动手吧！</p>
+<h2 id="咋升级"><a href="#咋升级" class="headerlink" title="咋升级"></a>咋升级</h2><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>先备份一下吧！</p>
+<h2 id="升级hexo"><a href="#升级hexo" class="headerlink" title="升级hexo"></a>升级hexo</h2><p>查看博客目录中的package.json文件，记录hexo和一些依赖版本</p>
+<pre><code class="bash">{
+  <span class="string">"name"</span>: <span class="string">"hexo-site"</span>,
+  <span class="string">"version"</span>: <span class="string">"0.0.0"</span>,
+  <span class="string">"private"</span>: <span class="literal">true</span>,
+  <span class="string">"scripts"</span>: {
+    <span class="string">"build"</span>: <span class="string">"hexo generate"</span>,
+    <span class="string">"clean"</span>: <span class="string">"hexo clean"</span>,
+    <span class="string">"deploy"</span>: <span class="string">"hexo deploy"</span>,
+    <span class="string">"server"</span>: <span class="string">"hexo server"</span>
+  },
+  <span class="string">"hexo"</span>: {
+    <span class="string">"version"</span>: <span class="string">"4.2.0"</span>
+  },
+  <span class="string">"dependencies"</span>: {
+    <span class="string">"hexo"</span>: <span class="string">"^4.0.0"</span>,
+    <span class="string">"hexo-asset-image"</span>: <span class="string">"^1.0.0"</span>,
+    <span class="string">"hexo-deployer-git"</span>: <span class="string">"^2.1.0"</span>,
+    <span class="string">"hexo-generator-archive"</span>: <span class="string">"^1.0.0"</span>,
+    <span class="string">"hexo-generator-category"</span>: <span class="string">"^1.0.0"</span>,
+    <span class="string">"hexo-generator-feed"</span>: <span class="string">"^2.2.0"</span>,
+    <span class="string">"hexo-generator-index"</span>: <span class="string">"^1.0.0"</span>,
+    <span class="string">"hexo-generator-searchdb"</span>: <span class="string">"^1.2.0"</span>,
+    <span class="string">"hexo-generator-tag"</span>: <span class="string">"^1.0.0"</span>,
+    <span class="string">"hexo-helper-live2d"</span>: <span class="string">"^3.1.1"</span>,
+    <span class="string">"hexo-lazyload-image"</span>: <span class="string">"^1.0.6"</span>,
+    <span class="string">"hexo-renderer-ejs"</span>: <span class="string">"^1.0.0"</span>,
+    <span class="string">"hexo-renderer-marked"</span>: <span class="string">"^2.0.0"</span>,
+    <span class="string">"hexo-renderer-stylus"</span>: <span class="string">"^1.1.0"</span>,
+    <span class="string">"hexo-server"</span>: <span class="string">"^1.0.0"</span>
+  }
+}</code></pre>
+<p>打开博客根目录，输入：</p>
+<pre><code class="bash">$ npm outdated</code></pre>
+<p>查看哪些依赖和插件需要更新</p>
+<p>果不其然，暂时还没有，毕竟才开始做没几天。</p>
+<p>未完，待续，，，查一波资料再继续，等下捅娄子了，，，</p>
 
-为自己记录一下升级，以免出错。才搭建好自己的博客，选好自己较为喜欢的主题，可越发觉得还有一些单调，发现自己所使用的next主题早已有更好看的更改,不改吧，心中还是痒痒的；但那是否，前面
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/03/28/%E5%8D%87%E7%BA%A7%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%88%91%E5%A4%AA%E9%9A%BE%E4%BA%86/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
       
     </div>
     
@@ -406,148 +435,82 @@ title: 升级博客，我太难了date: 2020-03-28 17:21:46tags:hexo 升级博�
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>如果你觉得本文很赞，可以扫码支付打赏哦！你说多少就多少~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
 
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/loading.gif" data-original="/images/wechatpay.jpg" alt="李文川 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/loading.gif" data-original="/images/alipay.jpg" alt="李文川 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    李文川
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2020/03/28/%E5%8D%87%E7%BA%A7%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%88%91%E5%A4%AA%E9%9A%BE%E4%BA%86/" title="升级博客，我太难了">http://yoursite.com/2020/03/28/%E5%8D%87%E7%BA%A7%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%88%91%E5%A4%AA%E9%9A%BE%E4%BA%86/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/28/hexo-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="李文川">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chuan's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/28/hexo-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/" itemprop="url">hexo-添加网站运行时间</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-28T13:24:22+08:00">
-                2020-03-28
-              </time>
+              <a href="/2020/03/28/hexo-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/" rel="next" title="hexo-添加网站运行时间">
+                <i class="fa fa-chevron-left"></i> hexo-添加网站运行时间
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          
-title: hexo-添加网站运行时间date: 2020-03-28 13:24:22tags:hexo next
-
-这个小功能可以很好的记录自己博客运行的时间，并且可以根据自己需要更改文字。这个小功能的实现非常的简单，按照如下步骤，就能轻松获取！在 \themes\next\layout_p
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/03/28/hexo-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -557,398 +520,27 @@ title: hexo-添加网站运行时间date: 2020-03-28 13:24:22tags:hexo next
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/28/hexo-%E5%8D%A1%E9%80%9A%E5%9B%BE%E8%B4%B4%E6%B7%BB%E5%8A%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="李文川">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chuan's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/28/hexo-%E5%8D%A1%E9%80%9A%E5%9B%BE%E8%B4%B4%E6%B7%BB%E5%8A%A0/" itemprop="url">hexo-卡通图贴添加</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-28T10:54:06+08:00">
-                2020-03-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-title: hexo 卡通图贴（看板娘）添加date: 2020-03-28 10:54:06tags:hexo next 
-
-博客美化之卡通图贴，如我的网页右下角就有一只小猫咪（hijiki），撸猫专属，它可以随着你的鼠标光标移动目光，枯燥乏味时还能撸猫，岂不美哉？作为经典博客美化方案，还不赶
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/03/28/hexo-%E5%8D%A1%E9%80%9A%E5%9B%BE%E8%B4%B4%E6%B7%BB%E5%8A%A0/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/27/%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83hexo%E6%96%87%E7%AB%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="李文川">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chuan's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/27/%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83hexo%E6%96%87%E7%AB%A0/" itemprop="url">如何发布hexo文章</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-27T16:58:23+08:00">
-                2020-03-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/03/27/%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83hexo%E6%96%87%E7%AB%A0/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
           </div>
-          <!--/noindex-->
-        
-      
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80OTMwMy8yNTc5NQ=="></div>
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/25/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="李文川">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Chuan's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/25/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-25T09:36:25+08:00">
-                2020-03-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/03/25/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
 
   
 
 
-          </div>
-          
-
-
-          
 
         </div>
         
@@ -969,8 +561,17 @@ title: hexo 卡通图贴（看板娘）添加date: 2020-03-28 10:54:06tags:hexo 
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1050,6 +651,22 @@ title: hexo 卡通图贴（看板娘）添加date: 2020-03-28 10:54:06tags:hexo 
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#咋升级"><span class="nav-number">1.</span> <span class="nav-text">咋升级</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#准备"><span class="nav-number">1.1.</span> <span class="nav-text">准备</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#升级hexo"><span class="nav-number">2.</span> <span class="nav-text">升级hexo</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
 
@@ -1217,6 +834,10 @@ setInterval("createtime()",250);
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1245,6 +866,17 @@ setInterval("createtime()",250);
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
