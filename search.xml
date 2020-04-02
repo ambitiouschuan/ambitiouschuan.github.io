@@ -19,6 +19,15 @@
 <pre><code class="bash">文章末尾添加“本文结束”标记
 passage_end_tag:
   enabled: <span class="literal">true</span></code></pre>
+<h2 id="文章添加字数统计、阅读时间"><a href="#文章添加字数统计、阅读时间" class="headerlink" title="文章添加字数统计、阅读时间"></a>文章添加字数统计、阅读时间</h2><h3 id="配置文件-1"><a href="#配置文件-1" class="headerlink" title="配置文件"></a>配置文件</h3><p>先给出<a href="https://github.com/theme-next/hexo-symbols-count-time" target="_blank" rel="noopener">官方配置说明</a></p>
+<p>选中你的站点文件，右键Get Bash Here进入命令框输入下面的代码导入文件：</p>
+<pre><code class="bash">$ npm install hexo-symbols-count-time --save</code></pre>
+<h3 id="主题文件调用-1"><a href="#主题文件调用-1" class="headerlink" title="主题文件调用"></a>主题文件调用</h3><pre><code class="bash">symbols_count_time:
+  symbols: <span class="literal">true</span>                <span class="comment"># 文章字数统计</span>
+  time: <span class="literal">true</span>                   <span class="comment"># 文章阅读时长</span>
+  total_symbols: <span class="literal">true</span>          <span class="comment"># 站点总字数统计</span>
+  total_time: <span class="literal">true</span>             <span class="comment"># 站点总阅读时长</span>
+  exclude_codeblock: <span class="literal">false</span>     <span class="comment"># 排除代码字数统计</span></code></pre>
 ]]></content>
   </entry>
   <entry>
