@@ -4,7 +4,7 @@
     <title>Hexo-美化</title>
     <url>/2020/04/02/Hexo-%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<hr>
-<p>title: Hexo 美化<br>date: 2020-04-02 09:39:32<br>tags: #文章标签， 可以省略<br>     - hexo<br>     - next7</p>
+<p>title: Hexo 美化<br>date: 2020-04-02 09:39:32<br>tags: #文章标签， 可以省略<br>[hexo ,next7]<br>     - hexo<br>     - next7</p>
 <hr>
 <p>本文讲述了关于hexo next 7的相关主题美化的配置。</p>
 <h2 id="文章末尾显示-“本文结束”标记"><a href="#文章末尾显示-“本文结束”标记" class="headerlink" title="文章末尾显示 “本文结束”标记"></a>文章末尾显示 “本文结束”标记</h2><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>在路径 \themes\next\layout_macro 中新建 passage-end-tag.swig 文件,并添加以下内容：（文字可更改）</p>
