@@ -60,49 +60,19 @@
   <entry>
     <title>升级博客，我太难了</title>
     <url>/2020/03/28/%E5%8D%87%E7%BA%A7%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%88%91%E5%A4%AA%E9%9A%BE%E4%BA%86/</url>
-    <content><![CDATA[<hr>
-<p>title: 升级博客，我太难了<br>date: 2020-03-28 17:21:46<br>tags:hexo 升级博客</p>
-<hr>
-<p>为自己记录一下升级，以免出错。才搭建好自己的博客，选好自己较为喜欢的主题，可越发觉得还有一些单调，发现自己所使用的next主题早已有更好看的更改,不改吧，心中还是痒痒的；但那是否，前面所做的所有配置都得一一更改，想来，更改量巨大，且早已忘记之前如何配置，但却想来，还是决心改掉，毕竟现在才搭建不久，还有很多配置还没有更改，若是改掉所有配置之后再做升级，岂不是工作量更大，还是动手吧！</p>
+    <content><![CDATA[<p>为自己记录一下升级，以免出错。才搭建好自己的博客，选好自己较为喜欢的主题，可越发觉得还有一些单调，发现自己所使用的next主题早已有更好看的更改,不改吧，心中还是痒痒的；但那是否，前面所做的所有配置都得一一更改，想来，更改量巨大，且早已忘记之前如何配置，但却想来，还是决心改掉，毕竟现在才搭建不久，还有很多配置还没有更改，若是改掉所有配置之后再做升级，岂不是工作量更大，还是动手吧！</p>
 <h2 id="咋升级"><a href="#咋升级" class="headerlink" title="咋升级"></a>咋升级</h2><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>先备份一下吧！</p>
 <h2 id="升级hexo"><a href="#升级hexo" class="headerlink" title="升级hexo"></a>升级hexo</h2><p>查看博客目录中的package.json文件，记录hexo和一些依赖版本</p>
-<pre><code class="bash">{
-  <span class="string">"name"</span>: <span class="string">"hexo-site"</span>,
-  <span class="string">"version"</span>: <span class="string">"0.0.0"</span>,
-  <span class="string">"private"</span>: <span class="literal">true</span>,
-  <span class="string">"scripts"</span>: {
-    <span class="string">"build"</span>: <span class="string">"hexo generate"</span>,
-    <span class="string">"clean"</span>: <span class="string">"hexo clean"</span>,
-    <span class="string">"deploy"</span>: <span class="string">"hexo deploy"</span>,
-    <span class="string">"server"</span>: <span class="string">"hexo server"</span>
-  },
-  <span class="string">"hexo"</span>: {
-    <span class="string">"version"</span>: <span class="string">"4.2.0"</span>
-  },
-  <span class="string">"dependencies"</span>: {
-    <span class="string">"hexo"</span>: <span class="string">"^4.0.0"</span>,
-    <span class="string">"hexo-asset-image"</span>: <span class="string">"^1.0.0"</span>,
-    <span class="string">"hexo-deployer-git"</span>: <span class="string">"^2.1.0"</span>,
-    <span class="string">"hexo-generator-archive"</span>: <span class="string">"^1.0.0"</span>,
-    <span class="string">"hexo-generator-category"</span>: <span class="string">"^1.0.0"</span>,
-    <span class="string">"hexo-generator-feed"</span>: <span class="string">"^2.2.0"</span>,
-    <span class="string">"hexo-generator-index"</span>: <span class="string">"^1.0.0"</span>,
-    <span class="string">"hexo-generator-searchdb"</span>: <span class="string">"^1.2.0"</span>,
-    <span class="string">"hexo-generator-tag"</span>: <span class="string">"^1.0.0"</span>,
-    <span class="string">"hexo-helper-live2d"</span>: <span class="string">"^3.1.1"</span>,
-    <span class="string">"hexo-lazyload-image"</span>: <span class="string">"^1.0.6"</span>,
-    <span class="string">"hexo-renderer-ejs"</span>: <span class="string">"^1.0.0"</span>,
-    <span class="string">"hexo-renderer-marked"</span>: <span class="string">"^2.0.0"</span>,
-    <span class="string">"hexo-renderer-stylus"</span>: <span class="string">"^1.1.0"</span>,
-    <span class="string">"hexo-server"</span>: <span class="string">"^1.0.0"</span>
-  }
-}</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"name"</span>: <span class="string">"hexo-site"</span>,</span><br><span class="line">  <span class="string">"version"</span>: <span class="string">"0.0.0"</span>,</span><br><span class="line">  <span class="string">"private"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">"scripts"</span>: &#123;</span><br><span class="line">    <span class="string">"build"</span>: <span class="string">"hexo generate"</span>,</span><br><span class="line">    <span class="string">"clean"</span>: <span class="string">"hexo clean"</span>,</span><br><span class="line">    <span class="string">"deploy"</span>: <span class="string">"hexo deploy"</span>,</span><br><span class="line">    <span class="string">"server"</span>: <span class="string">"hexo server"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">"hexo"</span>: &#123;</span><br><span class="line">    <span class="string">"version"</span>: <span class="string">"4.2.0"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">"dependencies"</span>: &#123;</span><br><span class="line">    <span class="string">"hexo"</span>: <span class="string">"^4.0.0"</span>,</span><br><span class="line">    <span class="string">"hexo-asset-image"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="string">"hexo-deployer-git"</span>: <span class="string">"^2.1.0"</span>,</span><br><span class="line">    <span class="string">"hexo-generator-archive"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="string">"hexo-generator-category"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="string">"hexo-generator-feed"</span>: <span class="string">"^2.2.0"</span>,</span><br><span class="line">    <span class="string">"hexo-generator-index"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="string">"hexo-generator-searchdb"</span>: <span class="string">"^1.2.0"</span>,</span><br><span class="line">    <span class="string">"hexo-generator-tag"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="string">"hexo-helper-live2d"</span>: <span class="string">"^3.1.1"</span>,</span><br><span class="line">    <span class="string">"hexo-lazyload-image"</span>: <span class="string">"^1.0.6"</span>,</span><br><span class="line">    <span class="string">"hexo-renderer-ejs"</span>: <span class="string">"^1.0.0"</span>,</span><br><span class="line">    <span class="string">"hexo-renderer-marked"</span>: <span class="string">"^2.0.0"</span>,</span><br><span class="line">    <span class="string">"hexo-renderer-stylus"</span>: <span class="string">"^1.1.0"</span>,</span><br><span class="line">    <span class="string">"hexo-server"</span>: <span class="string">"^1.0.0"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>打开博客根目录，输入：</p>
-<pre><code class="bash">$ npm outdated</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm outdated</span><br></pre></td></tr></table></figure>
 <p>查看哪些依赖和插件需要更新</p>
 <p>果不其然，暂时还没有，毕竟才开始做没几天。</p>
 <p>未完，待续，，，查一波资料再继续，等下捅娄子了，，，</p>
 ]]></content>
+      <tags>
+        <tag>博客升级</tag>
+      </tags>
   </entry>
   <entry>
     <title>hexo-添加网站运行时间</title>
@@ -119,79 +89,59 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo-卡通图贴添加</title>
+    <title>hexo 卡通图贴（看板娘）添加</title>
     <url>/2020/03/28/hexo-%E5%8D%A1%E9%80%9A%E5%9B%BE%E8%B4%B4%E6%B7%BB%E5%8A%A0/</url>
-    <content><![CDATA[<hr>
-<p>title: hexo 卡通图贴（看板娘）添加<br>date: 2020-03-28 10:54:06<br>tags:</p>
-<ul>
-<li>hexo </li>
-<li>next </li>
-</ul>
-<hr>
-<p>博客美化之卡通图贴，如我的网页右下角就有一只小猫咪（hijiki），撸猫专属，它可以随着你的鼠标光标移动目光，枯燥乏味时还能撸猫，岂不美哉？作为经典博客美化方案，还不赶快学起来？</p>
+    <content><![CDATA[<p>博客美化之卡通图贴，如我的网页右下角就有一只小猫咪（hijiki），撸猫专属，它可以随着你的鼠标光标移动目光，枯燥乏味时还能撸猫，岂不美哉？作为经典博客美化方案，还不赶快学起来？</p>
 <h2 id="hexo美化之–添加卡通图贴"><a href="#hexo美化之–添加卡通图贴" class="headerlink" title="hexo美化之–添加卡通图贴"></a>hexo美化之–添加卡通图贴</h2><p>首先检查站点目录下面的 package.json里是否有<br>“hexo-helper-live2d”: “^3.0.3”，如果已经有的话可以先卸载<br>然后在博客文件（我的是blogs文件夹，取决于你最初搭建网站建立的文件夹名字）右键选择Git Bash Here 进入命令窗口使用命令：</p>
-<pre><code class="bash">$  npm install --save hexo-helper-live2d</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$  npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
 <p>等待完成</p>
 <p>选择想要的卡通图贴：各个模型的预览请访问 <a href="https://huaji8.top/post/live2d-plugin-2.0/" target="_blank" rel="noopener">原作者的博客</a></p>
 <p>接下来添加模型文件有两种方案，我使用的是方案一：</p>
 <h3 id="方案一-简单粗暴添加"><a href="#方案一-简单粗暴添加" class="headerlink" title="方案一   简单粗暴添加"></a>方案一   简单粗暴添加</h3><p>1、直接进入官网下载好所需模型：<br><a href="https://github.com/xiazeyu/live2d-widget-models" target="_blank" rel="noopener">图贴模型github官网来源</a></p>
 <p>2、然后打开下载好的live2d-widget-models-master文件夹中的packages文件夹，（live2d-widget-models-master\live2d-widget-models-master\packages）全部复制站点文件中的node_modules文件中</p>
 <p>3、打开站点目录（我的是在blogs文件，不是主题next之类的文件夹）下的 _config.yml 文件，添加如下代码：</p>
-<pre><code class="bash">卡通人物选择
-live2d:
-  <span class="built_in">enable</span>: <span class="literal">true</span>
-  scriptFrom: <span class="built_in">local</span>
-  model:
-    use: live2d-widget-model-packages <span class="comment">#模型选择，更改自己喜欢的packages</span>
-  display:
-    position: right  <span class="comment">#模型位置</span>
-    width: 150       <span class="comment">#模型宽度</span>
-    height: 300      <span class="comment">#模型高度</span>
-  mobile:
-    show: <span class="literal">true</span>      <span class="comment">#是否在手机端显示</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">卡通人物选择</span><br><span class="line">live2d:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  scriptFrom: <span class="built_in">local</span></span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-packages <span class="comment">#模型选择，更改自己喜欢的packages</span></span><br><span class="line">  display:</span><br><span class="line">    position: right  <span class="comment">#模型位置</span></span><br><span class="line">    width: 150       <span class="comment">#模型宽度</span></span><br><span class="line">    height: 300      <span class="comment">#模型高度</span></span><br><span class="line">  mobile:</span><br><span class="line">    show: <span class="literal">true</span>      <span class="comment">#是否在手机端显示</span></span><br></pre></td></tr></table></figure>
+
 <p>4、然后照常的：<br>清除数据</p>
-<pre><code class="bash">$  hexo clean</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$  hexo clean</span><br></pre></td></tr></table></figure>
 <p>生成</p>
-<pre><code class="bash">$  hexo g</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$  hexo g</span><br></pre></td></tr></table></figure>
 <p>部署</p>
-<pre><code class="bash">$  hexo d</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$  hexo d</span><br></pre></td></tr></table></figure>
+
+
+
 <h3 id="方案二-npm添加"><a href="#方案二-npm添加" class="headerlink" title="方案二    npm添加"></a>方案二    npm添加</h3><p>1、在博客文件（我的是blogs文件夹，取决于你最初搭建网站建立的文件夹名字）右键选择Git Bash Here 进入命令窗口使用命令输入以下命令来下载相应的模型，将 packagename 更换成模型名称即可</p>
-<pre><code class="bash">$ npm install packagename</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install packagename</span><br></pre></td></tr></table></figure>
+
 <p>2、打开站点目录（我的是在blogs文件，不是主题next之类的文件夹）下的 _config.yml 文件，添加如下代码：</p>
-<pre><code class="bash">卡通人物选择
-live2d:
-  <span class="built_in">enable</span>: <span class="literal">true</span>
-  scriptFrom: <span class="built_in">local</span>
-  model:
-  use: live2d-widget-model-packages <span class="comment">#模型选择，更改自己喜欢的packages</span>
-  display:
-    position: right  <span class="comment">#模型位置</span>
-    width: 150       <span class="comment">#模型宽度</span>
-    height: 300      <span class="comment">#模型高度</span>
-  mobile:
-    show: <span class="literal">true</span>      <span class="comment">#是否在手机端显示</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">卡通人物选择</span><br><span class="line">live2d:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  scriptFrom: <span class="built_in">local</span></span><br><span class="line">  model:</span><br><span class="line">  use: live2d-widget-model-packages <span class="comment">#模型选择，更改自己喜欢的packages</span></span><br><span class="line">  display:</span><br><span class="line">    position: right  <span class="comment">#模型位置</span></span><br><span class="line">    width: 150       <span class="comment">#模型宽度</span></span><br><span class="line">    height: 300      <span class="comment">#模型高度</span></span><br><span class="line">  mobile:</span><br><span class="line">    show: <span class="literal">true</span>      <span class="comment">#是否在手机端显示</span></span><br></pre></td></tr></table></figure>
+
 <p>3、然后照常的：<br>清除数据</p>
-<pre><code class="bash">$  hexo clean</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$  hexo clean</span><br></pre></td></tr></table></figure>
 <p>生成</p>
-<pre><code class="bash">$  hexo g</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$  hexo g</span><br></pre></td></tr></table></figure>
 <p>部署</p>
-<pre><code class="bash">$  hexo d</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$  hexo d</span><br></pre></td></tr></table></figure>
+
 <p>##到此，图贴添加完毕， 多刷新几次自己的博客网页，更新部署会有延迟，接着就能正常显示了。</p>
 ]]></content>
+      <tags>
+        <tag>博客美化</tag>
+        <tag>next</tag>
+      </tags>
   </entry>
   <entry>
     <title>如何发布hexo文章</title>
     <url>/2020/03/27/%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83hexo%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<hr>
-<p>title: 如何发布hexo文章<br>date: 2020-03-27 16:58:23<br>tags: hexo</p>
-<hr>
-<p><a href="http://www.baidu.com" target="_blank" rel="noopener">hexo</a>  表示超链接<br>##大标题<br>###小标题</p>
+    <content><![CDATA[<p><a href="http://www.baidu.com" target="_blank" rel="noopener">hexo</a>  表示超链接<br>##大标题<br>###小标题</p>
 <a id="more"></a>
 <!-- 标签别名 -->
 <blockquote class="blockquote-center">
             <p>blah blah blah</p>
 
           </blockquote>
+
 <h2 id="空格-中文全角空格表示"><a href="#空格-中文全角空格表示" class="headerlink" title="空格  中文全角空格表示"></a>空格  中文全角空格表示</h2><h2 id="文章标题"><a href="#文章标题" class="headerlink" title="文章标题"></a>文章标题</h2><blockquote>
 <p>内容     区块引用<br><em>1<br>*2<br>*3<br>列表<br>*内容</em>     表示强调内容<br><img src="/uploads/loading.gif" data-original="/path/to/img.jpg" alt="Alt text">  图片<br><img src="/uploads/loading.gif" data-original="/upload_image/20161012/1.png" alt></p>
 </blockquote>
