@@ -1,97 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo-美化</title>
+    <title>Hexo 美化</title>
     <url>/2020/04/02/Hexo-%E7%BE%8E%E5%8C%96/</url>
-    <content><![CDATA[<hr>
-<p>title: Hexo 美化<br>tags: </p>
-<ul>
-<li>PS3</li>
-<li>Games</li>
-</ul>
-<hr>
-<p>本文讲述了关于hexo next 7的相关主题美化的配置。</p>
+    <content><![CDATA[<p>本文讲述了关于hexo next 7的相关主题美化的配置。</p>
 <h2 id="文章末尾显示-“本文结束”标记"><a href="#文章末尾显示-“本文结束”标记" class="headerlink" title="文章末尾显示 “本文结束”标记"></a>文章末尾显示 “本文结束”标记</h2><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>在路径 \themes\next\layout_macro 中新建 passage-end-tag.swig 文件,并添加以下内容：（文字可更改）</p>
-<pre><code class="bash">&lt;div&gt;
-    {% if not is_index %}       <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>    {% endif %}
-&lt;/div&gt;
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &#123;% <span class="keyword">if</span> not is_index %&#125;</span><br><span class="line">       &lt;div style=<span class="string">"text-align:center;color: #ccc;font-size:14px;"</span>&gt;-------------本文结束&lt;i class=<span class="string">"fa fa-paw"</span>&gt;&lt;/i&gt;感谢您的阅读-------------&lt;/div&gt;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <p>接着打开\themes\next\layout_macro\post.swig文件，在post-body 之后， post-footer之前添加如下画红色部分代码（post-footer之前两个DIV）（我使用的是next7，添加在  之后的）：</p>
-<pre><code class="bash">&lt;div&gt;
-  {% if not is_index %}    {% include 'passage-end-tag.swig' %}  {% endif %}
-&lt;/div&gt;</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">  &#123;% <span class="keyword">if</span> not is_index %&#125;</span><br><span class="line">    &#123;% include <span class="string">'passage-end-tag.swig'</span> %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="主题文件调用"><a href="#主题文件调用" class="headerlink" title="主题文件调用"></a>主题文件调用</h3><p>然后打开主题配置文件（_config.yml),在末尾添加：</p>
-<pre><code class="bash">文章末尾添加“本文结束”标记
-passage_end_tag:
-  enabled: <span class="literal">true</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">文章末尾添加“本文结束”标记</span><br><span class="line">passage_end_tag:</span><br><span class="line">  enabled: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
 <h2 id="文章添加字数统计、阅读时间"><a href="#文章添加字数统计、阅读时间" class="headerlink" title="文章添加字数统计、阅读时间"></a>文章添加字数统计、阅读时间</h2><h3 id="配置文件-1"><a href="#配置文件-1" class="headerlink" title="配置文件"></a>配置文件</h3><p>先给出<a href="https://github.com/theme-next/hexo-symbols-count-time" target="_blank" rel="noopener">官方配置说明</a></p>
 <p>选中你的站点文件，右键Get Bash Here进入命令框输入下面的代码导入文件：</p>
-<pre><code class="bash">$ npm install hexo-symbols-count-time --save</code></pre>
-<h3 id="主题文件调用-1"><a href="#主题文件调用-1" class="headerlink" title="主题文件调用"></a>主题文件调用</h3><pre><code class="bash">symbols_count_time:
-  symbols: <span class="literal">true</span>                <span class="comment"># 文章字数统计</span>
-  time: <span class="literal">true</span>                   <span class="comment"># 文章阅读时长</span>
-  total_symbols: <span class="literal">true</span>          <span class="comment"># 站点总字数统计</span>
-  total_time: <span class="literal">true</span>             <span class="comment"># 站点总阅读时长</span>
-  exclude_codeblock: <span class="literal">false</span>     <span class="comment"># 排除代码字数统计</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-symbols-count-time --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="主题文件调用-1"><a href="#主题文件调用-1" class="headerlink" title="主题文件调用"></a>主题文件调用</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  symbols: <span class="literal">true</span>                <span class="comment"># 文章字数统计</span></span><br><span class="line">  time: <span class="literal">true</span>                   <span class="comment"># 文章阅读时长</span></span><br><span class="line">  total_symbols: <span class="literal">true</span>          <span class="comment"># 站点总字数统计</span></span><br><span class="line">  total_time: <span class="literal">true</span>             <span class="comment"># 站点总阅读时长</span></span><br><span class="line">  exclude_codeblock: <span class="literal">false</span>     <span class="comment"># 排除代码字数统计</span></span><br></pre></td></tr></table></figure>
+
 <h2 id="文章设置阅读全文标记"><a href="#文章设置阅读全文标记" class="headerlink" title="文章设置阅读全文标记"></a>文章设置阅读全文标记</h2><p>先给出<a href="https://github.com/chekun/hexo-excerpt" target="_blank" rel="noopener">官方配置说明</a></p>
 <p>选中你的站点文件，右键Get Bash Here进入命令框输入下面的代码导入文件：</p>
-<pre><code class="bash">$ npm install hexo-excerpt --save</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-excerpt --save</span><br></pre></td></tr></table></figure>
+
 <p>在站点配置文件_config.yml添加</p>
-<pre><code class="bash">excerpt:
-depth: 10
-excerpt_excludes: []
-more_excludes: []
-hideWholePostExcerpts: <span class="literal">true</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">excerpt:</span><br><span class="line">depth: 10</span><br><span class="line">excerpt_excludes: []</span><br><span class="line">more_excludes: []</span><br><span class="line">hideWholePostExcerpts: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
 <p>以上方法不行的话 在博客配置文件 _config.yml里 excerpt_description 改为true</p>
-<pre><code class="bash"><span class="comment"># Automatically excerpt description in homepage as preamble text.</span>
-excerpt_description: <span class="literal">true</span></code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Automatically excerpt description in homepage as preamble text.</span></span><br><span class="line">excerpt_description: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
 <p>搞定！不过我的博客还是显示太多，不像最初hexo5的时候直接可以设定显示字数多少，很舒服，我再看一下。</p>
 <h2 id="站点信息背景块更改颜色"><a href="#站点信息背景块更改颜色" class="headerlink" title="站点信息背景块更改颜色"></a>站点信息背景块更改颜色</h2><p>路径Path: themes/next7/source/css/_schemes/Pisces/_header.sty<br>颜色可根据自己喜好更改<br>将下面的代码</p>
-<pre><code class="bash">.site-meta {
-  padding: 20px 0; <span class="comment">#);</span>
-}
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.site-meta &#123;</span><br><span class="line">  padding: 20px 0; <span class="comment">#);</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">更改：</span><br><span class="line">​``` bash</span><br><span class="line">.site-meta &#123;</span><br><span class="line">  background-image: linear-gradient(to right, <span class="comment">#db7093, #20B2AA, #4169E1);</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-更改：
-``` bash
-.site-meta {
-  background-image: linear-gradient(to right, <span class="comment">#db7093, #20B2AA, #4169E1);</span>
-}</code></pre>
 <h2 id="站点信息背景块更改颜色-1"><a href="#站点信息背景块更改颜色-1" class="headerlink" title="站点信息背景块更改颜色"></a>站点信息背景块更改颜色</h2><p>路径Path: themes/next/layout/_partials/sidebar/site-overview.swig</p>
 ]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next 7</tag>
+      </tags>
   </entry>
   <entry>
-    <title>Hexo-更改背景</title>
+    <title>Hexo 更改背景</title>
     <url>/2020/04/01/Hexo-%E6%9B%B4%E6%94%B9%E8%83%8C%E6%99%AF/</url>
-    <content><![CDATA[<hr>
-<p>title: Hexo 更改背景<br>date: 2020-04-01 23:04:39<br>tags: hexo next</p>
-<hr>
-<p>##修改背景样式<br>修改themes\next\source\css\ _custom\custom.styl文件，这个是Next故意留给用户自己个性化定制一些样式的文件，添加以下代码：</p>
-<pre><code class="bash">body {
-    background:url(https://source.unsplash.com/random/1600x900);
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position:50% 50%;
-    background-size:cover;
-}body {
-    background:url(https://source.unsplash.com/random/1600x900);
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position:50% 50%;
-    background-size:cover;
-}</code></pre>
+    <content><![CDATA[<p>##修改背景样式<br>修改themes\next\source\css\ _custom\custom.styl文件，这个是Next故意留给用户自己个性化定制一些样式的文件，添加以下代码：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background:url(https://source.unsplash.com/random/1600x900);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">    background-size:cover;</span><br><span class="line">&#125;body &#123;</span><br><span class="line">    background:url(https://source.unsplash.com/random/1600x900);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">    background-size:cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>url可更换为自己喜欢的图片的地址。<br>repeat：是否重复出现<br>attachment：定义背景图片随滚动轴的移动方式<br>position：设置背景图像的起始位置。<br>background-size:cover为可能有助于大分辨率下背景图的显示</p>
 <p>##修改不透明度（可加可不加，看实际效果）<br>因为next主题的背景是纯透明的，这样子就造成背景图片的影响看不见文字，这对于博客来说肯定不行。</p>
 <p>调整背景的不透明度可以更加美观，参数opacity:建议调整0.8至0.95之间。<br>修改themes\next\source\css\ _custom\custom.styl文件。在后面添加如下代码</p>
-<pre><code class="bash">.main-inner { 
-    margin-top: 60px;
-    padding: 60px 60px 60px 60px;
-    background: <span class="comment">#fff;</span>
-    opacity: 0.9;
-    min-height: 500px;
-}</code></pre>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.main-inner &#123; </span><br><span class="line">    margin-top: 60px;</span><br><span class="line">    padding: 60px 60px 60px 60px;</span><br><span class="line">    background: <span class="comment">#fff;</span></span><br><span class="line">    opacity: 0.9;</span><br><span class="line">    min-height: 500px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>##无custom.styl的情况<br>在站点目录source下新建 _data/styles.style</p>
 <p>然后将_config.styl中<code>bash  style:</code>前的 # 去掉即可。</p>
 ]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next7</tag>
+        <tag>博客美化</tag>
+      </tags>
   </entry>
   <entry>
     <title>升级博客，我太难了</title>
@@ -251,5 +215,8 @@ live2d:
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
+      <tags>
+        <tag>begin</tag>
+      </tags>
   </entry>
 </search>
