@@ -6,6 +6,7 @@
     <content><![CDATA[<hr>
 <p>title: Hexo 美化<br>date: 2020-04-02 09:39:32<br>tags:</p>
 <hr>
+<p>本文讲述了关于hexo next 7的相关主题美化的配置。</p>
 <h2 id="文章末尾显示-“本文结束”标记"><a href="#文章末尾显示-“本文结束”标记" class="headerlink" title="文章末尾显示 “本文结束”标记"></a>文章末尾显示 “本文结束”标记</h2><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>在路径 \themes\next\layout_macro 中新建 passage-end-tag.swig 文件,并添加以下内容：（文字可更改）</p>
 <pre><code class="bash">&lt;div&gt;
     {% if not is_index %}       <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>    {% endif %}
@@ -28,6 +29,19 @@ passage_end_tag:
   total_symbols: <span class="literal">true</span>          <span class="comment"># 站点总字数统计</span>
   total_time: <span class="literal">true</span>             <span class="comment"># 站点总阅读时长</span>
   exclude_codeblock: <span class="literal">false</span>     <span class="comment"># 排除代码字数统计</span></code></pre>
+<h2 id="文章设置阅读全文标记"><a href="#文章设置阅读全文标记" class="headerlink" title="文章设置阅读全文标记"></a>文章设置阅读全文标记</h2><p>先给出<a href="https://github.com/chekun/hexo-excerpt" target="_blank" rel="noopener">官方配置说明</a></p>
+<p>选中你的站点文件，右键Get Bash Here进入命令框输入下面的代码导入文件：</p>
+<pre><code class="bash">$ npm install hexo-excerpt --save</code></pre>
+<p>在站点配置文件_config.yml添加</p>
+<pre><code class="bash">excerpt:
+depth: 10
+excerpt_excludes: []
+more_excludes: []
+hideWholePostExcerpts: <span class="literal">true</span></code></pre>
+<p>以上方法不行的话 在博客配置文件 _config.yml里 excerpt_description 改为true</p>
+<pre><code class="bash"><span class="comment"># Automatically excerpt description in homepage as preamble text.</span>
+excerpt_description: <span class="literal">true</span></code></pre>
+<p>搞定！不过我的博客还是显示太多，不像最初hexo5的时候直接可以设定显示字数多少，很舒服，我再看一下。</p>
 ]]></content>
   </entry>
   <entry>
