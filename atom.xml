@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-01T15:16:36.203Z</updated>
+  <updated>2020-04-02T01:47:57.159Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo-美化</title>
+    <link href="http://yoursite.com/2020/04/02/Hexo-%E7%BE%8E%E5%8C%96/"/>
+    <id>http://yoursite.com/2020/04/02/Hexo-%E7%BE%8E%E5%8C%96/</id>
+    <published>2020-04-02T01:39:32.248Z</published>
+    <updated>2020-04-02T01:47:57.159Z</updated>
+    
+    <content type="html"><![CDATA[<hr><p>title: Hexo 美化<br>date: 2020-04-02 09:39:32<br>tags:</p><hr><h2 id="文章末尾显示-“本文结束”标记"><a href="#文章末尾显示-“本文结束”标记" class="headerlink" title="文章末尾显示 “本文结束”标记"></a>文章末尾显示 “本文结束”标记</h2><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>在路径 \themes\next\layout_macro 中新建 passage-end-tag.swig 文件,并添加以下内容：（文字可更改）</p><pre><code class="bash">&lt;div&gt;    {% if not is_index %}        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>    {% endif %}&lt;/div&gt;</code></pre><p>接着打开\themes\next\layout_macro\post.swig文件，在post-body 之后， post-footer之前添加如下画红色部分代码（post-footer之前两个DIV）（我使用的是next7，添加在  之后的）：</p><pre><code class="bash">&lt;div&gt;  {% if not is_index %}    {% include 'passage-end-tag.swig' %}  {% endif %}&lt;/div&gt;</code></pre><h3 id="主题文件调用"><a href="#主题文件调用" class="headerlink" title="主题文件调用"></a>主题文件调用</h3><p>然后打开主题配置文件（_config.yml),在末尾添加：</p><pre><code class="bash">文章末尾添加“本文结束”标记passage_end_tag:  enabled: <span class="literal">true</span>```</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;p&gt;title: Hexo 美化&lt;br&gt;date: 2020-04-02 09:39:32&lt;br&gt;tags:&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;文章末尾显示-“本文结束”标记&quot;&gt;&lt;a href=&quot;#文章末尾显示-“本文结束”标记&quot; class=&quot;headerlink&quot;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo-更改背景</title>
