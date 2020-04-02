@@ -42,6 +42,10 @@ hideWholePostExcerpts: <span class="literal">true</span></code></pre>
 <pre><code class="bash"><span class="comment"># Automatically excerpt description in homepage as preamble text.</span>
 excerpt_description: <span class="literal">true</span></code></pre>
 <p>搞定！不过我的博客还是显示太多，不像最初hexo5的时候直接可以设定显示字数多少，很舒服，我再看一下。</p>
+<h2 id="站点信心背景块更改颜色"><a href="#站点信心背景块更改颜色" class="headerlink" title="站点信心背景块更改颜色"></a>站点信心背景块更改颜色</h2><p>路径Path: themes/next7/source/css/_schemes/Pisces/_header.sty<br>颜色可根据自己喜好更改<br>更改为下面的代码导入文件：</p>
+<pre><code class="bash">.site-meta {
+  background-image: linear-gradient(to right, <span class="comment">#db7093, #20B2AA, #4169E1);</span>
+}</code></pre>
 ]]></content>
   </entry>
   <entry>
