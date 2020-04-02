@@ -256,20 +256,15 @@
 <pre><code class="bash">&lt;div&gt;
   {% if not is_index %}    {% include 'passage-end-tag.swig' %}  {% endif %}
 &lt;/div&gt;</code></pre>
-<h3 id="主题文件调用"><a href="#主题文件调用" class="headerlink" title="主题文件调用"></a>主题文件调用</h3><p>然后打开主题配置文件（_config.yml),在末尾添加：</p>
-<pre><code class="bash">文章末尾添加“本文结束”标记
-passage_end_tag:
-  enabled: <span class="literal">true</span></code></pre>
-<h2 id="文章添加字数统计、阅读时间"><a href="#文章添加字数统计、阅读时间" class="headerlink" title="文章添加字数统计、阅读时间"></a>文章添加字数统计、阅读时间</h2><h3 id="配置文件-1"><a href="#配置文件-1" class="headerlink" title="配置文件"></a>配置文件</h3><p>先给出<a href="https://github.com/theme-next/hexo-symbols-count-time" target="_blank" rel="noopener">官方配置说明</a></p>
-<p>选中你的站点文件，右键Get Bash Here进入命令框输入下面的代码导入文件：</p>
-<pre><code class="bash">$ npm install hexo-symbols-count-time --save</code></pre>
-<h3 id="主题文件调用-1"><a href="#主题文件调用-1" class="headerlink" title="主题文件调用"></a>主题文件调用</h3><pre><code class="bash">symbols_count_time:
-  symbols: <span class="literal">true</span>                <span class="comment"># 文章字数统计</span>
-  time: <span class="literal">true</span>                   <span class="comment"># 文章阅读时长</span>
-  total_symbols: <span class="literal">true</span>          <span class="comment"># 站点总字数统计</span>
-  total_time: <span class="literal">true</span>             <span class="comment"># 站点总阅读时长</span>
-  exclude_codeblock: <span class="literal">false</span>     <span class="comment"># 排除代码字数统计</span></code></pre>
-
+<h3 id="主题文件调用"><a href="#主题文件调用" class="headerlink" title="主题文件调用"></a>主题文件调用</h3>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/02/Hexo-%E7%BE%8E%E5%8C%96/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -374,8 +369,14 @@ passage_end_tag:
     min-height: 500px;
 }</code></pre>
 <p>##无custom.styl的情况<br>在站点目录source下新建 _data/styles.style</p>
-<p>然后将_config.styl中<code>bash  style:</code>前的 # 去掉即可。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/04/01/Hexo-%E6%9B%B4%E6%94%B9%E8%83%8C%E6%99%AF/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -489,12 +490,14 @@ passage_end_tag:
     <span class="string">"hexo-server"</span>: <span class="string">"^1.0.0"</span>
   }
 }</code></pre>
-<p>打开博客根目录，输入：</p>
-<pre><code class="bash">$ npm outdated</code></pre>
-<p>查看哪些依赖和插件需要更新</p>
-<p>果不其然，暂时还没有，毕竟才开始做没几天。</p>
-<p>未完，待续，，，查一波资料再继续，等下捅娄子了，，，</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/28/%E5%8D%87%E7%BA%A7%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%88%91%E5%A4%AA%E9%9A%BE%E4%BA%86/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -593,6 +596,14 @@ passage_end_tag:
 setInterval(<span class="string">"createtime()"</span>,250);
 &lt;/script&gt;</code></pre>
 
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/28/hexo-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -687,51 +698,14 @@ setInterval(<span class="string">"createtime()"</span>,250);
 <pre><code class="bash">$  npm install --save hexo-helper-live2d</code></pre>
 <p>等待完成</p>
 <p>选择想要的卡通图贴：各个模型的预览请访问 <a href="https://huaji8.top/post/live2d-plugin-2.0/" target="_blank" rel="noopener">原作者的博客</a></p>
-<p>接下来添加模型文件有两种方案，我使用的是方案一：</p>
-<h3 id="方案一-简单粗暴添加"><a href="#方案一-简单粗暴添加" class="headerlink" title="方案一   简单粗暴添加"></a>方案一   简单粗暴添加</h3><p>1、直接进入官网下载好所需模型：<br><a href="https://github.com/xiazeyu/live2d-widget-models" target="_blank" rel="noopener">图贴模型github官网来源</a></p>
-<p>2、然后打开下载好的live2d-widget-models-master文件夹中的packages文件夹，（live2d-widget-models-master\live2d-widget-models-master\packages）全部复制站点文件中的node_modules文件中</p>
-<p>3、打开站点目录（我的是在blogs文件，不是主题next之类的文件夹）下的 _config.yml 文件，添加如下代码：</p>
-<pre><code class="bash">卡通人物选择
-live2d:
-  <span class="built_in">enable</span>: <span class="literal">true</span>
-  scriptFrom: <span class="built_in">local</span>
-  model:
-    use: live2d-widget-model-packages <span class="comment">#模型选择，更改自己喜欢的packages</span>
-  display:
-    position: right  <span class="comment">#模型位置</span>
-    width: 150       <span class="comment">#模型宽度</span>
-    height: 300      <span class="comment">#模型高度</span>
-  mobile:
-    show: <span class="literal">true</span>      <span class="comment">#是否在手机端显示</span></code></pre>
-<p>4、然后照常的：<br>清除数据</p>
-<pre><code class="bash">$  hexo clean</code></pre>
-<p>生成</p>
-<pre><code class="bash">$  hexo g</code></pre>
-<p>部署</p>
-<pre><code class="bash">$  hexo d</code></pre>
-<h3 id="方案二-npm添加"><a href="#方案二-npm添加" class="headerlink" title="方案二    npm添加"></a>方案二    npm添加</h3><p>1、在博客文件（我的是blogs文件夹，取决于你最初搭建网站建立的文件夹名字）右键选择Git Bash Here 进入命令窗口使用命令输入以下命令来下载相应的模型，将 packagename 更换成模型名称即可</p>
-<pre><code class="bash">$ npm install packagename</code></pre>
-<p>2、打开站点目录（我的是在blogs文件，不是主题next之类的文件夹）下的 _config.yml 文件，添加如下代码：</p>
-<pre><code class="bash">卡通人物选择
-live2d:
-  <span class="built_in">enable</span>: <span class="literal">true</span>
-  scriptFrom: <span class="built_in">local</span>
-  model:
-  use: live2d-widget-model-packages <span class="comment">#模型选择，更改自己喜欢的packages</span>
-  display:
-    position: right  <span class="comment">#模型位置</span>
-    width: 150       <span class="comment">#模型宽度</span>
-    height: 300      <span class="comment">#模型高度</span>
-  mobile:
-    show: <span class="literal">true</span>      <span class="comment">#是否在手机端显示</span></code></pre>
-<p>3、然后照常的：<br>清除数据</p>
-<pre><code class="bash">$  hexo clean</code></pre>
-<p>生成</p>
-<pre><code class="bash">$  hexo g</code></pre>
-<p>部署</p>
-<pre><code class="bash">$  hexo d</code></pre>
-<p>##到此，图贴添加完毕， 多刷新几次自己的博客网页，更新部署会有延迟，接着就能正常显示了。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/28/hexo-%E5%8D%A1%E9%80%9A%E5%9B%BE%E8%B4%B4%E6%B7%BB%E5%8A%A0/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -892,12 +866,14 @@ live2d:
 
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/25/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1145,7 +1121,7 @@ setInterval("createtime()",250);
   
 
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"live2d-widget-model-hijiki"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
+<script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"live2d-widget-model-hijiki"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
 
 <!--����̻� -->
