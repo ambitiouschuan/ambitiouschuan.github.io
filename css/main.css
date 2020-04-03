@@ -1340,7 +1340,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d9ff5c;
+  background: #fbc90b;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2468,7 +2468,7 @@ ul.breadcrumb li + li:last-child {
 .header {
   margin: 0 auto;
   position: relative;
-  width: calc(100% - 20px);
+  width: 80% calc(100% - 20px);
 }
 @media (min-width: 1200px) {
   .header {
