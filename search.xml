@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HEXO 折腾笔记</title>
+    <url>/2020/04/03/HEXO-%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="添加分类及标签"><a href="#添加分类及标签" class="headerlink" title="添加分类及标签"></a>添加分类及标签</h2><p>关于标签和分类的使用方法参见</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Hexo 美化</title>
     <url>/2020/04/02/Hexo-%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<p>本文讲述了关于hexo next 7的相关主题美化的配置。</p>
@@ -151,6 +157,9 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
+      <categories>
+        <category>begin</category>
+      </categories>
       <tags>
         <tag>begin</tag>
       </tags>
