@@ -1340,7 +1340,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #9f373c;
+  background: #d182c9;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2466,147 +2466,87 @@ ul.breadcrumb li + li:last-child {
   margin: auto;
 }
 .header {
-  position: relative;
   margin: 0 auto;
-  width: 80%;
+  position: relative;
+  width: calc(100% - 20px);
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 1200px) {
   .header {
-    width: auto;
+    width: 1160px;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 1600px) {
+  .header {
+    width: 73%;
+  }
+}
+@media (max-width: 991px) {
   .header {
     width: auto;
   }
 }
 .header-inner {
-  position: absolute;
-  top: 0;
+  background: var(--content-bg-color);
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   overflow: hidden;
   padding: 0;
+  position: absolute;
+  top: 0;
   width: 240px;
-  background: rgba(255,255,255,0.8);
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
-  border-radius: 15px 15px 15px 15px;
 }
 @media (min-width: 1200px) {
-  .container .header-inner {
+  .header-inner {
     width: 240px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .header-inner {
+    border-radius: initial;
     position: relative;
     width: auto;
-    border-radius: initial;
   }
 }
-@media (max-width: 767px) {
-  .header-inner {
-    position: relative;
-    width: auto;
-    border-radius: initial;
-  }
+.main-inner {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .main {
-    padding-bottom: 100px;
-  }
-}
-@media (max-width: 767px) {
-  .main {
-    padding-bottom: 100px;
-  }
-}
-.container .main-inner {
-  width: 80%;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .container .main-inner {
-    width: auto;
-  }
-}
-@media (max-width: 767px) {
-  .container .main-inner {
+@media (max-width: 991px) {
+  .main-inner {
     width: auto;
   }
 }
 .content-wrap {
-  float: right;
+  background: var(--content-bg-color);
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   box-sizing: border-box;
   padding: 40px;
-  width: calc(100% - 260px);
-  background: #fff;
-  min-height: 700px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
-  border-radius: 15px 15px 15px 15px;
+  width: calc(100% - 252px);
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .content-wrap {
-    width: 100%;
-    padding: 20px;
     border-radius: initial;
-  }
-}
-@media (max-width: 767px) {
-  .content-wrap {
-    width: 100%;
     padding: 20px;
-    min-height: auto;
-    border-radius: initial;
+    width: 100%;
   }
 }
-.sidebar {
-  position: static;
-  float: left;
-  margin-top: 300px;
-  width: 240px;
-  background: #eee;
-  box-shadow: none;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .sidebar {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
-  .sidebar {
-    display: none;
-  }
-}
-.sidebar-toggle {
-  display: none;
-}
-.footer-inner {
-  padding-left: 260px;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .footer-inner {
-    width: auto;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-}
-@media (max-width: 767px) {
-  .footer-inner {
-    width: auto;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-}
-.sidebar-position-right .header-inner {
+.header-inner {
   right: 0;
 }
-.sidebar-position-right .content-wrap {
-  float: left;
+.book-mark-link {
+  left: 30px;
 }
-.sidebar-position-right .sidebar {
-  float: right;
-}
-.sidebar-position-right .footer-inner {
-  padding-left: 0;
+.footer-inner {
   padding-right: 260px;
+}
+@media (max-width: 991px) {
+  .footer-inner {
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+  }
 }
 .site-brand-container {
   background: #222;
