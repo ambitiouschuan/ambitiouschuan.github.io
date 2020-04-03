@@ -1340,7 +1340,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #fcfefc;
+  background: #090411;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2472,12 +2472,12 @@ ul.breadcrumb li + li:last-child {
 }
 @media (min-width: 1200px) {
   .header {
-    width: 80% 1160px;
+    width: 1160px;
   }
 }
 @media (min-width: 1600px) {
   .header {
-    width: 80% 73%;
+    width: 73%;
   }
 }
 @media (max-width: 991px) {
@@ -2493,11 +2493,11 @@ ul.breadcrumb li + li:last-child {
   padding: 0;
   position: absolute;
   top: 0;
-  width: 80% 240px;
+  width: 240px;
 }
 @media (min-width: 1200px) {
   .header-inner {
-    width: 80% 240px;
+    width: 240px;
   }
 }
 @media (max-width: 991px) {
