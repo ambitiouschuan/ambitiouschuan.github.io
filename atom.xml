@@ -139,9 +139,9 @@
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
-      <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
-    
       <category term="博客美化" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
+    
+      <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
     
   </entry>
   
@@ -224,9 +224,9 @@
     
     
     
-      <category term="博客美化" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
-    
       <category term="next" scheme="http://yoursite.com/tags/next/"/>
+    
+      <category term="博客美化" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
     
   </entry>
   
