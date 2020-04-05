@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-05T08:24:25.107Z</updated>
+  <updated>2020-04-05T08:37:31.585Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/04/05/Hexo-next7-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%89%80%E6%9C%89%E5%9B%BE%E6%A0%87%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%EF%BC%88%E6%98%BE%E7%A4%BA%E5%B0%8F%E6%96%B9%E5%9D%97%EF%BC%89/"/>
     <id>http://yoursite.com/2020/04/05/Hexo-next7-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%89%80%E6%9C%89%E5%9B%BE%E6%A0%87%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%EF%BC%88%E6%98%BE%E7%A4%BA%E5%B0%8F%E6%96%B9%E5%9D%97%EF%BC%89/</id>
     <published>2020-04-05T00:53:48.000Z</published>
-    <updated>2020-04-05T08:24:25.107Z</updated>
+    <updated>2020-04-05T08:37:31.585Z</updated>
     
     <content type="html"><![CDATA[<p>​        刚升级完next7发现以前的所有的图标不能正常显示，所有的，全部显示的是一个小方块</p><a id="more"></a><p><img src="/uploads/loading.gif" data-original="1.png" alt></p><p>​        这肯定是加载了图标，可是为什么显示不出来呢？首先，图标库升级了，Font Awesome 4.7.0，是否我的配置没有正确呢？查了很多资料，发现了也有我这同样的问题（所有的图标都是小方块），很多都没有讲述清楚，如何更改，多次失败，最终找到了解决的办法，如下：</p><h3 id="检查文件"><a href="#检查文件" class="headerlink" title="检查文件"></a>检查文件</h3><p>首先你要检查你的文件(我的是在\blogs\themes\next7\source\lib)，如果没有有最新的Font Awesome 4.7.0，在官网点击下载，或者，直接到github库中： <a href="https://github.com/hexojs/hexo-fontawesome" target="_blank" rel="noopener">传送门</a>.</p><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>在\blogs\themes\next7\layout_partials\head\head.swig中添加如下代码：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fa-brands/css/fa-brands.min.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fa-regular/css/fa-regular.min.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fa-solid/css/fa-solid.min.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fontawesome/css/fontawesome.min.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fontawesome-all/css/fontawesome-all.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link href=<span class="string">"https://use.fontawesome.com/releases/v5.0.4/css/all.css"</span> rel=<span class="string">"stylesheet"</span>&gt;</span><br></pre></td></tr></table></figure><p>然后，重新hexo clean ，hexo g ，hexo  d就可以了。</p>]]></content>
     
@@ -48,7 +48,7 @@
     <link href="http://yoursite.com/2020/04/04/%E6%B7%B1%E5%88%87%E5%93%80%E6%82%BC%E5%9C%A8%E6%8A%97%E5%87%BB%E6%96%B0%E5%9E%8B%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E4%B8%AD%E7%89%BA%E7%89%B2%E7%9A%84%E7%83%88%E5%A3%AB%E5%92%8C%E5%90%8C%E8%83%9E/"/>
     <id>http://yoursite.com/2020/04/04/%E6%B7%B1%E5%88%87%E5%93%80%E6%82%BC%E5%9C%A8%E6%8A%97%E5%87%BB%E6%96%B0%E5%9E%8B%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E4%B8%AD%E7%89%BA%E7%89%B2%E7%9A%84%E7%83%88%E5%A3%AB%E5%92%8C%E5%90%8C%E8%83%9E/</id>
     <published>2020-04-04T02:00:00.000Z</published>
-    <updated>2020-04-05T08:35:15.871Z</updated>
+    <updated>2020-04-05T08:35:50.247Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/uploads/loading.gif" data-original="%E6%B7%B1%E5%88%87%E5%93%80%E6%82%BC.jpg" alt></p><p>​        家是最小国，国是千万家。家与国是我们生命的源起，亦是心灵依托的归宿，一脉传承，浑然合一。届时正值新型冠状病毒泛滥之时，虽已有近6月之久，疫情依旧难以压制，忆武汉封城之时，无数平民争先恐后，逃离重灾区武汉，直至封城。接着口罩成了年货，消毒水成为畅销，2020本该热闹的春节，霎时变得冷清，繁华的都市一片死寂，静的可怕。然而，在这国家危难之时，却有无数“战士”，冲向“前线”。他们，是天使、勇士，是至亲、至爱，他们，是最美的逆行者！今日，全国哀悼，此刻，一起缅怀，为逝去的同胞，为牺牲的战“疫”勇士，永远铭记！<a id="more"></a></p><p>​        “哪有什么岁月静好，不过是有人替你负重前行”</p><p><img src="/uploads/loading.gif" data-original="%E6%88%98%E7%96%AB%E5%8B%87%E5%A3%AB.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="%E8%AD%A6%E5%AF%9F.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="%E6%88%98%E5%A3%AB.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="download.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="%E5%85%A8%E5%9B%BD%E5%93%80%E6%82%BC%E6%97%A5%E9%99%8D%E5%8D%8A%E6%97%97.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="%E7%BC%85%E6%80%80.jpg" alt></p><p>​        愿逝者安息，愿生者奋发，愿祖国昌盛，致敬英雄！</p>]]></content>
     
