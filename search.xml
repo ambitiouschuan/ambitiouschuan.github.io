@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo next7 博客中所有图标不能正常显示（显示小方块）</title>
+    <url>/2020/04/05/Hexo-next7-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%89%80%E6%9C%89%E5%9B%BE%E6%A0%87%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%EF%BC%88%E6%98%BE%E7%A4%BA%E5%B0%8F%E6%96%B9%E5%9D%97%EF%BC%89/</url>
+    <content><![CDATA[<p>刚升级完next7发现以前的所有的图标不能正常显示，所有的，全部显示的是一个小方块，这肯定是加载了图标，可是为什么显示不出来呢？首先，图标库升级了，Font Awesome 4.7.0，是否我的配置没有正确呢？查了很多资料，发现了也有我这同样的问题（所有的图标都是小方块），很多都没有讲述清楚，如何更改，多次失败，最终找到了解决的办法，如下：</p>
+<p>##检查文件</p>
+<p>首先你要检查你的文件(我的是在\blogs\themes\next7\source\lib)，如果没有有最新的Font Awesome 4.7.0，在官网点击下载，或者，直接到github库中：</p>
+<p>##配置文件</p>
+<p>在\blogs\themes\next7\layout_partials\head\head.swig中添加如下代码：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fa-brands/css/fa-brands.min.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fa-regular/css/fa-regular.min.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fa-solid/css/fa-solid.min.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fontawesome/css/fontawesome.min.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fontawesome-all/css/fontawesome-all.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link href=<span class="string">"https://use.fontawesome.com/releases/v5.0.4/css/all.css"</span> rel=<span class="string">"stylesheet"</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p>然后，重新hexo clean ，hexo g ，hexo  d就可以了。</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>next7</tag>
+        <tag>博客美化</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>深切哀悼在抗击新型肺炎疫情中牺牲的烈士和同胞</title>
     <url>/2020/04/04/%E6%B7%B1%E5%88%87%E5%93%80%E6%82%BC%E5%9C%A8%E6%8A%97%E5%87%BB%E6%96%B0%E5%9E%8B%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E4%B8%AD%E7%89%BA%E7%89%B2%E7%9A%84%E7%83%88%E5%A3%AB%E5%92%8C%E5%90%8C%E8%83%9E/</url>
     <content><![CDATA[<p><img src="/uploads/loading.gif" data-original="E:%5C1something%5Cblogs%5Csource_posts%5C%E6%B7%B1%E5%88%87%E5%93%80%E6%82%BC%E5%9C%A8%E6%8A%97%E5%87%BB%E6%96%B0%E5%9E%8B%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%E4%B8%AD%E7%89%BA%E7%89%B2%E7%9A%84%E7%83%88%E5%A3%AB%E5%92%8C%E5%90%8C%E8%83%9E%5C%E6%B7%B1%E5%88%87%E5%93%80%E6%82%BC.jpg" alt></p>
@@ -16,7 +37,7 @@
 <p>​        愿逝者安息，愿生者奋发，愿祖国昌盛，致敬英雄！</p>
 ]]></content>
       <categories>
-        <category>“生活随笔”</category>
+        <category>生活随笔</category>
       </categories>
       <tags>
         <tag>致敬英雄</tag>
@@ -92,10 +113,13 @@
 <p>##无custom.styl的情况<br>在站点目录source下新建 _data/styles.style</p>
 <p>然后将_config.styl中<code>bash  style:</code>前的 # 去掉即可。</p>
 ]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>next7</tag>
         <tag>博客美化</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -124,6 +148,9 @@
 
 
 ]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
       <tags>
         <tag>hexo</tag>
         <tag>next</tag>
@@ -167,9 +194,12 @@
 
 <p>##到此，图贴添加完毕， 多刷新几次自己的博客网页，更新部署会有延迟，接着就能正常显示了。</p>
 ]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
       <tags>
-        <tag>next</tag>
         <tag>博客美化</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
