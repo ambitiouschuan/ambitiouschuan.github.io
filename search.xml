@@ -19,8 +19,8 @@
       </categories>
       <tags>
         <tag>next7</tag>
-        <tag>博客美化</tag>
         <tag>Hexo</tag>
+        <tag>博客美化</tag>
       </tags>
   </entry>
   <entry>
@@ -120,7 +120,7 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.main-inner &#123; </span><br><span class="line">    margin-top: 60px;</span><br><span class="line">    padding: 60px 60px 60px 60px;</span><br><span class="line">    background: <span class="comment">#fff;</span></span><br><span class="line">    opacity: 0.9;</span><br><span class="line">    min-height: 500px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="无custom-styl的情况"><a href="#无custom-styl的情况" class="headerlink" title="无custom.styl的情况"></a>无custom.styl的情况</h3><p>在站点目录source下新建 _data/styles.style</p>
-<p>然后将_config.styl中<code>bash  style:</code>前的 # 去掉即可。</p>
+<p>然后将_config.styl中<code>style:</code>前的 # 去掉即可。</p>
 ]]></content>
       <categories>
         <category>Hexo</category>
