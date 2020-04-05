@@ -1340,7 +1340,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #6ee7a7;
+  background: #ffff58;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1937,13 +1937,13 @@ pre .javascript .function {
   top: 0;
   width: 100%;
 }
-.posts-expand .post-eof {
-  display: block;
-  margin: 60px auto 50px;
-  width: 8%;
-  height: 1px;
-  background: #ccc;
-  text-align: center;
+.posts-expand .post {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.posts-expand .post {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .post-gallery {
   align-items: center;
