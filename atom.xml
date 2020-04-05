@@ -35,9 +35,9 @@
       <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
       <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
       <category term="博客美化" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
     
@@ -92,9 +92,9 @@
       <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
     
     
-      <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
-    
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
     
   </entry>
   
@@ -143,11 +143,11 @@
       <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
     
     
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
       <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
     
       <category term="博客美化" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
