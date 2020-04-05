@@ -6,10 +6,8 @@
     <content><![CDATA[<p>​        刚升级完next7发现以前的所有的图标不能正常显示，所有的，全部显示的是一个小方块</p>
 <p><img src="/uploads/loading.gif" data-original="E:%5C1something%5Cblogs%5Csource_posts%5CHexo-next7-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%89%80%E6%9C%89%E5%9B%BE%E6%A0%87%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%EF%BC%88%E6%98%BE%E7%A4%BA%E5%B0%8F%E6%96%B9%E5%9D%97%EF%BC%89%5C1.png" alt></p>
 <p>​        这肯定是加载了图标，可是为什么显示不出来呢？首先，图标库升级了，Font Awesome 4.7.0，是否我的配置没有正确呢？查了很多资料，发现了也有我这同样的问题（所有的图标都是小方块），很多都没有讲述清楚，如何更改，多次失败，最终找到了解决的办法，如下：</p>
-<p>##检查文件</p>
-<p>首先你要检查你的文件(我的是在\blogs\themes\next7\source\lib)，如果没有有最新的Font Awesome 4.7.0，在官网点击下载，或者，直接到github库中： <a href="https://github.com/hexojs/hexo-fontawesome" target="_blank" rel="noopener">传送门</a>.</p>
-<p>##配置文件</p>
-<p>在\blogs\themes\next7\layout_partials\head\head.swig中添加如下代码：</p>
+<h3 id="检查文件"><a href="#检查文件" class="headerlink" title="检查文件"></a>检查文件</h3><p>首先你要检查你的文件(我的是在\blogs\themes\next7\source\lib)，如果没有有最新的Font Awesome 4.7.0，在官网点击下载，或者，直接到github库中： <a href="https://github.com/hexojs/hexo-fontawesome" target="_blank" rel="noopener">传送门</a>.</p>
+<h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>在\blogs\themes\next7\layout_partials\head\head.swig中添加如下代码：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fa-brands/css/fa-brands.min.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fa-regular/css/fa-regular.min.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fa-solid/css/fa-solid.min.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fontawesome/css/fontawesome.min.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"&lt;%- url_for('/fontawesome-all/css/fontawesome-all.css') %&gt;"</span>&gt;</span><br><span class="line">&lt;link href=<span class="string">"https://use.fontawesome.com/releases/v5.0.4/css/all.css"</span> rel=<span class="string">"stylesheet"</span>&gt;</span><br></pre></td></tr></table></figure>
 
 <p>然后，重新hexo clean ，hexo g ，hexo  d就可以了。</p>
@@ -105,14 +103,14 @@
   <entry>
     <title>Hexo 更改背景</title>
     <url>/2020/04/01/Hexo-%E6%9B%B4%E6%94%B9%E8%83%8C%E6%99%AF/</url>
-    <content><![CDATA[<p>##修改背景样式<br>修改themes\next\source\css\ _custom\custom.styl文件，这个是Next故意留给用户自己个性化定制一些样式的文件，添加以下代码：</p>
+    <content><![CDATA[<h3 id="修改背景样式"><a href="#修改背景样式" class="headerlink" title="修改背景样式"></a>修改背景样式</h3><p>修改themes\next\source\css\ _custom\custom.styl文件，这个是Next故意留给用户自己个性化定制一些样式的文件，添加以下代码：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background:url(https://source.unsplash.com/random/1600x900);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">    background-size:cover;</span><br><span class="line">&#125;body &#123;</span><br><span class="line">    background:url(https://source.unsplash.com/random/1600x900);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">    background-size:cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>url可更换为自己喜欢的图片的地址。<br>repeat：是否重复出现<br>attachment：定义背景图片随滚动轴的移动方式<br>position：设置背景图像的起始位置。<br>background-size:cover为可能有助于大分辨率下背景图的显示</p>
 <p>##修改不透明度（可加可不加，看实际效果）<br>因为next主题的背景是纯透明的，这样子就造成背景图片的影响看不见文字，这对于博客来说肯定不行。</p>
 <p>调整背景的不透明度可以更加美观，参数opacity:建议调整0.8至0.95之间。<br>修改themes\next\source\css\ _custom\custom.styl文件。在后面添加如下代码</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.main-inner &#123; </span><br><span class="line">    margin-top: 60px;</span><br><span class="line">    padding: 60px 60px 60px 60px;</span><br><span class="line">    background: <span class="comment">#fff;</span></span><br><span class="line">    opacity: 0.9;</span><br><span class="line">    min-height: 500px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>##无custom.styl的情况<br>在站点目录source下新建 _data/styles.style</p>
+<h3 id="无custom-styl的情况"><a href="#无custom-styl的情况" class="headerlink" title="无custom.styl的情况"></a>无custom.styl的情况</h3><p>在站点目录source下新建 _data/styles.style</p>
 <p>然后将_config.styl中<code>bash  style:</code>前的 # 去掉即可。</p>
 ]]></content>
       <categories>
