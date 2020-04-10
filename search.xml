@@ -18,8 +18,8 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>next7</tag>
         <tag>Hexo</tag>
+        <tag>next7</tag>
         <tag>博客美化</tag>
       </tags>
   </entry>
@@ -53,14 +53,14 @@
     <content><![CDATA[<h2 id="添加分类及标签"><a href="#添加分类及标签" class="headerlink" title="添加分类及标签"></a>添加分类及标签</h2><p>关于标签和分类的使用方法参见</p>
 <a id="more"></a>
 
-<p>[Hexo使用攻略-添加分类及标签]: </p>
+<p>[Hexo使用攻略-添加分类及标签]:  <a href="https://www.jianshu.com/p/e17711e44e00" target="_blank" rel="noopener">传送门</a>.</p>
 ]]></content>
       <categories>
         <category>blog</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>next7</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -125,9 +125,9 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>next7</tag>
         <tag>博客美化</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>

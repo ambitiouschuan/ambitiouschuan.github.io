@@ -35,9 +35,9 @@
       <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
     
     
-      <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
-    
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
     
       <category term="博客美化" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
     
@@ -78,9 +78,9 @@
     <link href="http://yoursite.com/2020/04/03/HEXO-%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2020/04/03/HEXO-%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0/</id>
     <published>2020-04-03T02:12:06.000Z</published>
-    <updated>2020-04-05T06:25:58.661Z</updated>
+    <updated>2020-04-10T09:51:42.926Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="添加分类及标签"><a href="#添加分类及标签" class="headerlink" title="添加分类及标签"></a>添加分类及标签</h2><p>关于标签和分类的使用方法参见</p><a id="more"></a><p>[Hexo使用攻略-添加分类及标签]: </p>]]></content>
+    <content type="html"><![CDATA[<h2 id="添加分类及标签"><a href="#添加分类及标签" class="headerlink" title="添加分类及标签"></a>添加分类及标签</h2><p>关于标签和分类的使用方法参见</p><a id="more"></a><p>[Hexo使用攻略-添加分类及标签]:  <a href="https://www.jianshu.com/p/e17711e44e00" target="_blank" rel="noopener">传送门</a>.</p>]]></content>
     
     <summary type="html">
     
@@ -92,9 +92,9 @@
       <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
       <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
@@ -143,11 +143,11 @@
       <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
       <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
     
       <category term="博客美化" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
