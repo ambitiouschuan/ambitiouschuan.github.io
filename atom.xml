@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-05T08:37:31.585Z</updated>
+  <updated>2020-04-28T01:57:50.893Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>成语积累</title>
+    <link href="http://yoursite.com/2020/04/28/%E6%88%90%E8%AF%AD%E7%A7%AF%E7%B4%AF/"/>
+    <id>http://yoursite.com/2020/04/28/%E6%88%90%E8%AF%AD%E7%A7%AF%E7%B4%AF/</id>
+    <published>2020-04-28T01:53:51.000Z</published>
+    <updated>2020-04-28T01:57:50.893Z</updated>
+    
+    <content type="html"><![CDATA[<p>从今天开始，积累一些成语的使用，让自己的语言功底也能慢慢提升！</p><a id="more"></a><p>削足适履：比喻不合理地钱就现成的条件，也指不顾具体条件，生搬硬套。</p><p>无可厚非：说话做事有缺点，但也还有可取之处，应予谅解。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;从今天开始，积累一些成语的使用，让自己的语言功底也能慢慢提升！&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="积累" scheme="http://yoursite.com/tags/%E7%A7%AF%E7%B4%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo next7 博客中所有图标不能正常显示（显示小方块）</title>
@@ -37,9 +58,9 @@
     
       <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
     
-      <category term="博客美化" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
-    
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="博客美化" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
     
   </entry>
   

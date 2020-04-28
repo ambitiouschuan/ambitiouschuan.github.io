@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>成语积累</title>
+    <url>/2020/04/28/%E6%88%90%E8%AF%AD%E7%A7%AF%E7%B4%AF/</url>
+    <content><![CDATA[<p>从今天开始，积累一些成语的使用，让自己的语言功底也能慢慢提升！</p>
+<a id="more"></a>
+
+<p>削足适履：比喻不合理地钱就现成的条件，也指不顾具体条件，生搬硬套。</p>
+<p>无可厚非：说话做事有缺点，但也还有可取之处，应予谅解。</p>
+]]></content>
+      <tags>
+        <tag>积累</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo next7 博客中所有图标不能正常显示（显示小方块）</title>
     <url>/2020/04/05/Hexo-next7-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%89%80%E6%9C%89%E5%9B%BE%E6%A0%87%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%EF%BC%88%E6%98%BE%E7%A4%BA%E5%B0%8F%E6%96%B9%E5%9D%97%EF%BC%89/</url>
     <content><![CDATA[<p>​        刚升级完next7发现以前的所有的图标不能正常显示，所有的，全部显示的是一个小方块</p>
@@ -19,8 +32,8 @@
       </categories>
       <tags>
         <tag>next7</tag>
-        <tag>博客美化</tag>
         <tag>Hexo</tag>
+        <tag>博客美化</tag>
       </tags>
   </entry>
   <entry>
