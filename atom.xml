@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-28T01:57:50.893Z</updated>
+  <updated>2020-04-30T03:20:55.007Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,45 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PLC那些事</title>
+    <link href="http://yoursite.com/2020/04/30/PLC%E9%82%A3%E4%BA%9B%E4%BA%8B/"/>
+    <id>http://yoursite.com/2020/04/30/PLC%E9%82%A3%E4%BA%9B%E4%BA%8B/</id>
+    <published>2020-04-30T02:49:50.000Z</published>
+    <updated>2020-04-30T03:20:55.007Z</updated>
+    
+    <content type="html"><![CDATA[<p>​    来讲讲plc那些事吧！谈谈我的所学。</p><p>​    本文讲述了一些关于plc的基本指令，比较适合入门的同学，快来看看吧！</p><a id="more"></a><h1 id="什么是PLC"><a href="#什么是PLC" class="headerlink" title="什么是PLC?"></a>什么是PLC?</h1><p>Programmable Logic Controller可编程控制器</p><p>PLC 是一种专门用于工业控制的计算机；</p><p>PLC设计理念是将计算机系统的功能完备、灵活、通用与继电器控制系统的简单易懂、操作方便、价格便宜等优点结合起来，制造出的一种新型的工业控制设备。</p><p>由于PLC属于程序控制方式，其控制功能是通过存放在存储器内的程序来实现的，若要对控制功能加以修改，只需改变软件指令即可，不需过多地改变硬件，从而实现了硬件的软件化管理。</p><h2 id="plc的优缺点"><a href="#plc的优缺点" class="headerlink" title="plc的优缺点"></a>plc的优缺点</h2><p>PLC与接触器控制系统相比之优点在于：<br>1、使用和维护方便 可靠性高   使用寿命为半永久性;<br>2、运行稳定 抗干扰性强  对环境要求低;<br>3、设计施工周期短;<br>4、编程软件和语言简单易学 编程方法针对普通工人         便于普及;<br>5、控制功能强 适应范围广与其它设备兼容性好 .    </p><h2 id="plc的功能"><a href="#plc的功能" class="headerlink" title="plc的功能"></a>plc的功能</h2><p>（1）条件控制 :可代替继电器进行开关控制<br>（2）定时控制 :精确定时器其定时值可任意修改<br>（3）计数功能 :各种计数方法的计数器上百个<br>（4）步近控制:可以把复杂控制简单化<br>（5）闭环过程控制 ;<br>（6）数据处理:加减乘除、开方、译码、字操作等<br>（7）通信和联网:便于实现分散式测控系统<br>（8）对控制系统的监控 .</p><h2 id="plc的构成"><a href="#plc的构成" class="headerlink" title="plc的构成"></a>plc的构成</h2><p><img src="/uploads/loading.gif" data-original="PLC%E7%9A%84%E5%86%85%E9%83%A8%E7%BB%93%E6%9E%84.png" alt></p><p>其中，各个部分有哪些作用呢？</p><h4 id="CPU"><a href="#CPU" class="headerlink" title="CPU"></a>CPU</h4><p>(1) 将各种输入信号取入存储器。<br>(2) 编译、执行指令。<br>(3) 把结果送到输出端。<br>(4) 响应各种外部设备的请求。</p><h4 id="存储器"><a href="#存储器" class="headerlink" title="存储器"></a>存储器</h4><p>RAM：存储各种暂存数据、中间结果、用户程序。<br>ROM：存放系统程序和固定不变的用户程序。</p><h4 id="开关量输入、输出接口（I-O口）"><a href="#开关量输入、输出接口（I-O口）" class="headerlink" title="开关量输入、输出接口（I/O口）"></a>开关量输入、输出接口（I/O口）</h4><p> 接口采用光电隔离和RC滤波，实现了PLC的内部电路与外部电路的电气隔离，并减小了电磁干扰。同时满足工业现场各类信号的匹配要求。</p><h5 id="输入接口"><a href="#输入接口" class="headerlink" title="输入接口"></a>输入接口</h5><p>  用来接收、采集外部输入信号，并将转换成CPU可接受的数字信息。</p><h5 id="输入接口分类"><a href="#输入接口分类" class="headerlink" title="输入接口分类"></a>输入接口分类</h5><p>输入接口电路可采集的信号有三大类：<br>    无源开关：     如按钮、接触器触点、行程开关等<br>    有源开关：     如接近开关、晶体管开关电路等<br>    模拟量信号： 由电位器、测速发电机和各类变送器产生</p><h5 id="输出接口"><a href="#输出接口" class="headerlink" title="输出接口"></a>输出接口</h5><p> 输出接口电路是PLC与外部负载之间的桥梁，将PLC向外输出的信号转换成可以驱动外部执行电路的控制信号，以便控制如接触器线圈等电器的通断电</p><h5 id="输出接口分类"><a href="#输出接口分类" class="headerlink" title="输出接口分类"></a>输出接口分类</h5><p>继电器输出（交直流接口）：响应速度慢、带负载能力大 、每口输出最大电流为2安、可接交流或直流负载</p><p>晶闸管输出（交流接口）：响应速度及带载能力 适中、每口输出最大电流为几十毫安（略大于晶闸管的）、可接交流负载</p><p>晶体管输出（直流接口）： 响应速度快、带负载能力小 、每口输出最大电流为几十毫安、可接直流负载</p><h2 id="plc的规模分类"><a href="#plc的规模分类" class="headerlink" title="plc的规模分类"></a>plc的规模分类</h2><p>可编程序控制器可以分为大型机、中型机和小型机。<br> 小型机 :   小型机的控制点一般在256点之内,适合于单机控制或小型系统的控制。</p><p>中型机:     中型机的控制点一般不大于2048点,可用于对设备进行直接控制，还可以对多个下一级的可编程序控制器进行监控，它适合中型或大型控制系统的控制。</p><p>大型机:   大型机的控制点一般大于2048点,不仅能完成较复杂的算术运算还能进行复杂的矩阵运算。它不仅可用于对设备进行直接控制，还可以对多个下一级的可编程序控制器进行监控。</p><p><img src="/uploads/loading.gif" data-original="PLC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E4%B8%8E%E6%8E%A5%E8%A7%A6%E5%99%A8%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%AF%94%E8%BE%83.png" alt></p><h2 id="plc的控制"><a href="#plc的控制" class="headerlink" title="plc的控制"></a>plc的控制</h2><p>猴急了吧？接下来，讲plc的控制。</p><p>首先，你得明白在PLC控制系统中逻辑控制部分由“软元件”组成，常用的软元件有：输入继电器X、输出继电器Y、辅助继电器M、定时器T、计数器C等。</p><p>其次，你得知道，plc的编程语言有三种：梯形图、语句表（指令表）和流程图（SFC）</p><h4 id="plc的编程语言"><a href="#plc的编程语言" class="headerlink" title="plc的编程语言"></a>plc的编程语言</h4><p>1）梯形图   用图形符号在图中的相互关系来表达控制逻辑的编程语言。特点：形象、直观、与继电器控制线路相似，是编程的首选方法。</p><p><img src="/uploads/loading.gif" data-original="%E6%A2%AF%E5%BD%A2%E5%9B%BE.png" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;​    来讲讲plc那些事吧！谈谈我的所学。&lt;/p&gt;
+&lt;p&gt;​    本文讲述了一些关于plc的基本指令，比较适合入门的同学，快来看看吧！&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="PLC" scheme="http://yoursite.com/categories/PLC/"/>
+    
+    
+      <category term="PLC" scheme="http://yoursite.com/tags/PLC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常识积累</title>
+    <link href="http://yoursite.com/2020/04/28/%E5%B8%B8%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
+    <id>http://yoursite.com/2020/04/28/%E5%B8%B8%E8%AF%86%E7%A7%AF%E7%B4%AF/</id>
+    <published>2020-04-28T02:00:59.000Z</published>
+    <updated>2020-04-30T03:04:18.220Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>成语积累</title>
