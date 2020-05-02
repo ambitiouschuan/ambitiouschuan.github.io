@@ -25,7 +25,7 @@
 <p>再点击安装</p>
 <p><img src="/uploads/loading.gif" data-original="%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%852.png" alt></p>
 <p>浏览器界面没有任何显示，但是脚本已经安装成功了，对应脚本的使用方法，参见你所选择脚本的简介。</p>
-<p>（ps:赶紧去试试那啥全网VIP…的脚本吧！<img src="/uploads/loading.gif" data-original="%E6%96%9C%E7%9C%BC%E7%AC%91.png" alt>）</p>
+<p>（ps:赶紧去试试那啥全网VIP…的脚本吧！）<img src="/uploads/loading.gif" data-original="%E6%96%9C%E7%9C%BC%E7%AC%91.png" alt></p>
 <h2 id="查看已经安装好的脚本"><a href="#查看已经安装好的脚本" class="headerlink" title="查看已经安装好的脚本"></a>查看已经安装好的脚本</h2><p>点击工具栏中的油猴图标，选项框中选择<strong><em>管理面板</em></strong> 即可查看你所安装好的所有脚本。</p>
 <p><img src="/uploads/loading.gif" data-original="%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF.png" alt></p>
 <h2 id="手机端也想拥有？"><a href="#手机端也想拥有？" class="headerlink" title="手机端也想拥有？"></a>手机端也想拥有？</h2><p>目前大多数手机浏览器不能安装脚本，但是，有一个非常推荐，yandex浏览器，如果你想要yandex的安装包，可以给我留言哦！</p>
@@ -119,8 +119,8 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>next7</tag>
         <tag>Hexo</tag>
+        <tag>next7</tag>
         <tag>博客美化</tag>
       </tags>
   </entry>
@@ -160,8 +160,8 @@
         <category>blog</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>next7</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -226,9 +226,9 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>next7</tag>
         <tag>博客美化</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
