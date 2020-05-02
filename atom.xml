@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-30T03:34:04.148Z</updated>
+  <updated>2020-05-02T01:46:02.894Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>带你白嫖--chrome+油猴</title>
+    <link href="http://yoursite.com/2020/05/02/%E5%B8%A6%E4%BD%A0%E7%99%BD%E5%AB%96-chrome-%E6%B2%B9%E7%8C%B4/"/>
+    <id>http://yoursite.com/2020/05/02/%E5%B8%A6%E4%BD%A0%E7%99%BD%E5%AB%96-chrome-%E6%B2%B9%E7%8C%B4/</id>
+    <published>2020-05-01T23:00:22.000Z</published>
+    <updated>2020-05-02T01:46:02.894Z</updated>
+    
+    <content type="html"><![CDATA[<p>很多小伙伴都装上了chrome浏览器，或者以chrome浏览器为内核的各类浏览器，除了好用、方便、合理之外，想必大家也深受它的另外一个功能所吸引—安装插件。</p><p>这一功能，极大的提高了用户体验，也让浏览器本身不必那么冗杂，运行速度自然也提升上去了，另一方面，也满足了每个人的定制化需求，两全其美。</p><p>今天，来说说其中一个经典且强大的插件–Tampermonkey。油猴，作为chrome插件中的神器，很多人或多或少都听说过，可是笔者也发现，有很多朋友，仅仅是因为它的出名或者排行靠前，就草草的安装，便置之不理了。那么今天，来带大家使用这一神器，白嫖各类功能。</p><p><img src="/uploads/loading.gif" data-original="tampermonkey.jpg" alt></p><a id="more"></a><h2 id="Tampermonkey"><a href="#Tampermonkey" class="headerlink" title="Tampermonkey"></a>Tampermonkey</h2><p>Tampermonkey在国内称为油猴，它是一个可以安装脚本的浏览器插件，用户可根据自己的喜好安装或者编写脚本。不过经过全球各地无数开发者数年的积累现在其官网已经有一大把的优秀的现成脚本，完全可以满足普通用户的日常应用。</p><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>首先，你得知道如何安装插件，进入chome的往上应用商店<a href="https://chrome.google.com/webstore/category/extensions?hl=zh-CN" target="_blank" rel="noopener">传送门</a>(如果不使用特殊的方法，不能打开网址是正常的，毕竟使用的是国内的网络，由于某些特殊原因就只能提醒到这里了，你可以再根据这个问题，去搜搜解决方法，相信你了解之后，也会知道不能直接说明的原因),在搜索应用处tampermonkey，安装tampermonkey插件</p><p><img src="/uploads/loading.gif" data-original="%E4%B8%8B%E8%BD%BD%E6%8F%92%E4%BB%B6.png" alt></p><p>点击添加到chrome</p><p>工具栏显示tampermonkey的图标，即表示安装完成。</p><p><img src="/uploads/loading.gif" data-original="%E5%B7%A5%E5%85%B7%E6%A0%8F%E6%98%BE%E7%A4%BA.png" alt></p><h2 id="使用tampermonkey装脚本"><a href="#使用tampermonkey装脚本" class="headerlink" title="使用tampermonkey装脚本"></a>使用tampermonkey装脚本</h2><p>如果你是大神级的人物，你可以使用tampermonkey建立自己的脚本。或者，你可以使用各位大佬已经做好的脚本，并且这些脚本都已经非常实用。脚本网站<a href="https://greasyfork.org/zh-CN" target="_blank" rel="noopener">传送门</a>，进入脚本网站。</p><p><img src="/uploads/loading.gif" data-original="greasyfork.png" alt></p><p>接下来，在网站的标题栏处，可以看到<strong><em>脚本列表</em></strong> ，点击<strong><em>脚本列表</em></strong> 进入脚本列表，就可以根据你的喜好，选择你所需要的功能，相信你做到这一步，你会非常惊喜，因为，已经打开了一个新世界的大门！</p><p>先给你看看其中的脚本简介，就问你心动不心动？</p><p><img src="/uploads/loading.gif" data-original="%E8%84%9A%E6%9C%AC%E5%88%97%E8%A1%A8.png" alt></p><p>当你选择好你的脚本之后，点击脚本标题进入界面如下：</p><p><img src="/uploads/loading.gif" data-original="%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85.png" alt></p><p>再点击安装</p><p><img src="/uploads/loading.gif" data-original="%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%852.png" alt></p><p>浏览器界面没有任何显示，但是脚本已经安装成功了，对应脚本的使用方法，参见你所选择脚本的简介。</p><p>（ps:赶紧去试试那啥全网VIP…的脚本吧！<img src="/uploads/loading.gif" data-original="%E6%96%9C%E7%9C%BC%E7%AC%91.png" alt>）</p><h2 id="查看已经安装好的脚本"><a href="#查看已经安装好的脚本" class="headerlink" title="查看已经安装好的脚本"></a>查看已经安装好的脚本</h2><p>点击工具栏中的油猴图标，选项框中选择<strong><em>管理面板</em></strong> 即可查看你所安装好的所有脚本。</p><p><img src="/uploads/loading.gif" data-original="%E7%AE%A1%E7%90%86%E9%9D%A2%E6%9D%BF.png" alt></p><h2 id="手机端也想拥有？"><a href="#手机端也想拥有？" class="headerlink" title="手机端也想拥有？"></a>手机端也想拥有？</h2><p>目前大多数手机浏览器不能安装脚本，但是，有一个非常推荐，yandex浏览器，如果你想要yandex的安装包，可以给我留言哦！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;很多小伙伴都装上了chrome浏览器，或者以chrome浏览器为内核的各类浏览器，除了好用、方便、合理之外，想必大家也深受它的另外一个功能所吸引—安装插件。&lt;/p&gt;
+&lt;p&gt;这一功能，极大的提高了用户体验，也让浏览器本身不必那么冗杂，运行速度自然也提升上去了，另一方面，也满足了每个人的定制化需求，两全其美。&lt;/p&gt;
+&lt;p&gt;今天，来说说其中一个经典且强大的插件–Tampermonkey。油猴，作为chrome插件中的神器，很多人或多或少都听说过，可是笔者也发现，有很多朋友，仅仅是因为它的出名或者排行靠前，就草草的安装，便置之不理了。那么今天，来带大家使用这一神器，白嫖各类功能。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/uploads/loading.gif&quot; data-original=&quot;tampermonkey.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="白嫖" scheme="http://yoursite.com/categories/%E7%99%BD%E5%AB%96/"/>
+    
+    
+      <category term="chrome" scheme="http://yoursite.com/tags/chrome/"/>
+    
+      <category term="tampermonkey" scheme="http://yoursite.com/tags/tampermonkey/"/>
+    
+  </entry>
   
   <entry>
     <title>PLC那些事</title>
@@ -95,9 +123,9 @@
       <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
       <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
       <category term="博客美化" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
     
@@ -152,9 +180,9 @@
       <category term="blog" scheme="http://yoursite.com/categories/blog/"/>
     
     
-      <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
-    
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
     
   </entry>
   
@@ -203,18 +231,18 @@
       <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
     
     
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
       <category term="next7" scheme="http://yoursite.com/tags/next7/"/>
     
       <category term="博客美化" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/"/>
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>升级博客，我太难了</title>
-    <link href="http://yoursite.com/2020/03/28/%E5%8D%87%E7%BA%A7%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%88%91%E5%A4%AA%E9%9A%BE%E4%BA%86/"/>
-    <id>http://yoursite.com/2020/03/28/%E5%8D%87%E7%BA%A7%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%88%91%E5%A4%AA%E9%9A%BE%E4%BA%86/</id>
+    <link href="http://yoursite.com/2020/03/28/%E5%8D%9A%E5%AE%A2%E5%8D%87%E7%BA%A7/"/>
+    <id>http://yoursite.com/2020/03/28/%E5%8D%9A%E5%AE%A2%E5%8D%87%E7%BA%A7/</id>
     <published>2020-03-28T09:21:46.000Z</published>
     <updated>2020-04-05T06:33:31.418Z</updated>
     
