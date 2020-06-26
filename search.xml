@@ -15,7 +15,28 @@
 <p>无论是主人驾驶还是司机驾驶，都应以前排右座为尊，后排右侧次之，后排左侧为末席。上车时，后排位低者先上车，前排尊者后上。下车时前排客人先下，后排客人再下车。</p>
 <h2 id="商务会客礼仪"><a href="#商务会客礼仪" class="headerlink" title="商务会客礼仪"></a>商务会客礼仪</h2><p>应视会客的对象、地点选择相应的服饰；如作为主方，则应提前安排好场地和相关细节，切不可迟到；作为被邀请方，迟到也不宜超过5分钟</p>
 <p><img src="/uploads/loading.gif" data-original="%E4%BC%9A%E5%AE%A2%E5%85%A5%E5%BA%A7.png" alt></p>
-<h2 id="握手礼仪"><a href="#握手礼仪" class="headerlink" title="握手礼仪"></a>握手礼仪</h2>]]></content>
+<h2 id="握手礼仪"><a href="#握手礼仪" class="headerlink" title="握手礼仪"></a>握手礼仪</h2><ol>
+<li>上下级之间，上级伸手后，下级才能伸手相握；</li>
+<li>长辈与晚辈之间，长辈伸手后，晚辈才能伸手相握；</li>
+<li>男女之间，女士伸手后，男士才能伸手相握；</li>
+<li>握手时，男士应脱下手套，女士如戒指戴在手套外面可不脱手套；</li>
+<li>握手时应伸出右手，绝不可伸出左手；</li>
+<li>握手时的力量要把握适中，既不可有气无力，也不能太用力。</li>
+</ol>
+<h2 id="交流用语"><a href="#交流用语" class="headerlink" title="交流用语"></a>交流用语</h2><p>初次见面：幸会                                  请人解答：请问</p>
+<p>看望别人：拜访                                  赞人见解：高见</p>
+<p>等候别人：恭候                                  归还原物：奉还</p>
+<p>请人勿送：留步                                  求人原谅：包涵</p>
+<p>麻烦别人：打扰                                  老人年龄：高寿</p>
+<p>求给方便：借光                                  好久不见：久违</p>
+<p>托人办事：拜托                                  客人来到：光临</p>
+<p>请人指教：请教                                  中途先走：失陪</p>
+<p>他人指点：赐教                                  与人分别：告辞</p>
+<h2 id="礼仪介绍"><a href="#礼仪介绍" class="headerlink" title="礼仪介绍"></a>礼仪介绍</h2><p>1.介绍他人认识：先低后高，先主后客，先晚辈后长辈，先个人后集体</p>
+<p>2.“请允许我向您介绍” ，“请允许我自我介绍”</p>
+<p>3.打招呼男士为先，握手女士为先</p>
+<p>4.介绍手势：手掌向上，五指并拢，伸向被介绍者，不能用手指指指点点；当别人介绍你时，应微笑或握手点点头，如果你正坐着，应该起立</p>
+]]></content>
       <categories>
         <category>技能学习</category>
       </categories>
@@ -43,6 +64,8 @@
 
 <h5 id="给参数赋值输出"><a href="#给参数赋值输出" class="headerlink" title="给参数赋值输出"></a>给参数赋值输出</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">price &#x3D; 10</span><br><span class="line">price &#x3D; 20</span><br><span class="line">print(price)</span><br><span class="line"></span><br><span class="line">rating &#x3D; 4.9</span><br><span class="line">is_published &#x3D; False</span><br><span class="line">print(price)</span><br></pre></td></tr></table></figure>
 
+
+
 <h2 id="input"><a href="#input" class="headerlink" title="input"></a>input</h2><h5 id="输入数据，输出结果"><a href="#输入数据，输出结果" class="headerlink" title="输入数据，输出结果"></a>输入数据，输出结果</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">name &#x3D; input(&#39;What is your name? &#39;)</span><br><span class="line">print(&#39;Hi &#39; + name )</span><br></pre></td></tr></table></figure>
 
 <h5 id="复合用法"><a href="#复合用法" class="headerlink" title="复合用法"></a>复合用法</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">name &#x3D; input(&#39;What is your name? &#39;)</span><br><span class="line">favorite_color &#x3D; input(&#39;What is your favorite color? &#39;)</span><br><span class="line">print( name + &#39; likes &#39; + favorite_color)</span><br></pre></td></tr></table></figure>
@@ -52,6 +75,8 @@
 
 
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">weight_lbs &#x3D; input(&#39;Weight(lbs: &#39;)</span><br><span class="line">weight_kg  &#x3D; int(weight_lbs) * 0.45</span><br><span class="line">print(weight_kg)</span><br></pre></td></tr></table></figure>
+
+
 
 
 
@@ -368,9 +393,9 @@
         <category>Hexo</category>
       </categories>
       <tags>
+        <tag>Hexo</tag>
         <tag>next7</tag>
         <tag>博客美化</tag>
-        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -409,8 +434,8 @@
         <category>blog</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>next7</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -475,9 +500,9 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>next7</tag>
         <tag>博客美化</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
