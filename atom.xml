@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://liwenchuan.cn/"/>
-  <updated>2020-07-02T15:50:41.746Z</updated>
+  <updated>2020-10-20T12:39:35.179Z</updated>
   <id>http://liwenchuan.cn/</id>
   
   <author>
@@ -17,35 +17,27 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Python 爬虫</title>
+    <title>Python-爬虫</title>
     <link href="http://liwenchuan.cn/2020/07/02/Python-%E7%88%AC%E8%99%AB/"/>
     <id>http://liwenchuan.cn/2020/07/02/Python-%E7%88%AC%E8%99%AB/</id>
-    <published>2020-07-02T14:49:06.000Z</published>
-    <updated>2020-07-02T15:50:41.746Z</updated>
+    <published>2020-07-02T14:49:06.668Z</published>
+    <updated>2020-10-20T12:39:35.179Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="url详解："><a href="#url详解：" class="headerlink" title="url详解："></a>url详解：</h2><p>一个URL 由一下几个部分组成：</p><p>{协议}：//{用户名}:{密码}@{主机名}:{端口号}/{路径}/{文件}?{参数}</p><p><strong>1.</strong>协议部分：该URL的协议部分为“http：”，这代表网页使用的是HTTP协议。在Internet中可以使用多种协议，如HTTP，FTP等等本例中使用的是HTTP协议。在”HTTP”后面的“//”为分隔符</p><p><strong>2.</strong>域名部分：该URL的域名部分为“www.##########.com”。一个URL中，也可以使用IP地址作为域名使用</p><p><strong>3.</strong>端口部分：跟在域名后面的是端口，域名和端口之间使用“:”作为分隔符。端口不是一个URL必须的部分，如果省略端口部分，将采用默认端口</p><p><strong>4.</strong>虚拟目录部分：从域名后的第一个“/”开始到最后一个“/”为止，是虚拟目录部分。虚拟目录也不是一个URL必须的部分。本例中的虚拟目录是“/news/”</p><p><strong>5.</strong>文件名部分：从域名后的最后一个“/”开始到“？”为止，是文件名部分，如果没有“?”,则是从域名后的最后一个“/”开始到“#”为止，是文件部分，如果没有“？”和“#”，那么从域名后的最后一个“/”开始到结束，都是文件名部分。本例中的文件名是“index.asp”。文件名部分也不是一个URL必须的部分，如果省略该部分，则使用默认的文件名</p><p><strong>6.</strong>锚部分：从“#”开始到最后，都是锚部分。本例中的锚部分是“name”。锚部分也不是一个URL必须的部分</p><p><strong>7.</strong>参数部分：从“？”开始到“#”为止之间的部分为参数部分，又称搜索部分、查询部分。本例中的参数部分为“boardID=5&amp;ID=24618&amp;page=1”。参数可以允许有多个参数，参数与参数之间用“&amp;”作为分隔符。</p>]]></content>
+    <content type="html"><![CDATA[<hr><p>title: Python 爬虫<br>date: 2020-07-02 22:49:06<br>tags:</p><ul><li>Python</li><li>爬虫<br>categories: 程序猿</li></ul><hr><a id="more"></a><h2 id="url详解："><a href="#url详解：" class="headerlink" title="url详解："></a>url详解：</h2><p>一个URL 由一下几个部分组成：</p><p>{协议}：//{用户名}:{密码}@{主机名}:{端口号}/{路径}/{文件}?{参数}</p><p><strong>1.</strong>协议部分：该URL的协议部分为“http：”，这代表网页使用的是HTTP协议。在Internet中可以使用多种协议，如HTTP，FTP等等本例中使用的是HTTP协议。在”HTTP”后面的“//”为分隔符</p><p><strong>2.</strong>域名部分：该URL的域名部分为“www.##########.com”。一个URL中，也可以使用IP地址作为域名使用</p><p><strong>3.</strong>端口部分：跟在域名后面的是端口，域名和端口之间使用“:”作为分隔符。端口不是一个URL必须的部分，如果省略端口部分，将采用默认端口</p><p><strong>4.</strong>虚拟目录部分：从域名后的第一个“/”开始到最后一个“/”为止，是虚拟目录部分。虚拟目录也不是一个URL必须的部分。本例中的虚拟目录是“/news/”</p><p><strong>5.</strong>文件名部分：从域名后的最后一个“/”开始到“？”为止，是文件名部分，如果没有“?”,则是从域名后的最后一个“/”开始到“#”为止，是文件部分，如果没有“？”和“#”，那么从域名后的最后一个“/”开始到结束，都是文件名部分。本例中的文件名是“index.asp”。文件名部分也不是一个URL必须的部分，如果省略该部分，则使用默认的文件名</p><p><strong>6.</strong>锚部分：从“#”开始到最后，都是锚部分。本例中的锚部分是“name”。锚部分也不是一个URL必须的部分</p><p><strong>7.</strong>参数部分：从“？”开始到“#”为止之间的部分为参数部分，又称搜索部分、查询部分。本例中的参数部分为“boardID=5&amp;ID=24618&amp;page=1”。参数可以允许有多个参数，参数与参数之间用“&amp;”作为分隔符。</p>]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;url详解：&quot;&gt;&lt;a href=&quot;#url详解：&quot; class=&quot;headerlink&quot; title=&quot;url详解：&quot;&gt;&lt;/a&gt;url详解：&lt;/h2&gt;&lt;p&gt;一个URL 由一下几个部分组成：&lt;/p&gt;
-&lt;p&gt;{协议}：//{用户名}:{密码}@{主机名}:{端口号}/{路径}/{文件}?{参数}&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt;协议部分：该URL的协议部分为“http：”，这代表网页使用的是HTTP协议。在Internet中可以使用多种协议，如HTTP，FTP等等本例中使用的是HTTP协议。在”HTTP”后面的“//”为分隔符&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt;域名部分：该URL的域名部分为“www.##########.com”。一个URL中，也可以使用IP地址作为域名使用&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt;端口部分：跟在域名后面的是端口，域名和端口之间使用“:”作为分隔符。端口不是一个URL必须的部分，如果省略端口部分，将采用默认端口&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt;虚拟目录部分：从域名后的第一个“/”开始到最后一个“/”为止，是虚拟目录部分。虚拟目录也不是一个URL必须的部分。本例中的虚拟目录是“/news/”&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;5.&lt;/strong&gt;文件名部分：从域名后的最后一个“/”开始到“？”为止，是文件名部分，如果没有“?”,则是从域名后的最后一个“/”开始到“#”为止，是文件部分，如果没有“？”和“#”，那么从域名后的最后一个“/”开始到结束，都是文件名部分。本例中的文件名是“index.asp”。文件名部分也不是一个URL必须的部分，如果省略该部分，则使用默认的文件名&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;6.&lt;/strong&gt;锚部分：从“#”开始到最后，都是锚部分。本例中的锚部分是“name”。锚部分也不是一个URL必须的部分&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;7.&lt;/strong&gt;参数部分：从“？”开始到“#”为止之间的部分为参数部分，又称搜索部分、查询部分。本例中的参数部分为“boardID=5&amp;amp;ID=24618&amp;amp;page=1”。参数可以允许有多个参数，参数与参数之间用“&amp;amp;”作为分隔符。&lt;/p&gt;
+      &lt;hr&gt;
+&lt;p&gt;title: Python 爬虫&lt;br&gt;date: 2020-07-02 22:49:06&lt;br&gt;tags:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;爬虫&lt;br&gt;categories: 程序猿&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
     
     </summary>
     
     
-      <category term="程序猿" scheme="http://liwenchuan.cn/categories/%E7%A8%8B%E5%BA%8F%E7%8C%BF/"/>
-    
-    
-      <category term="Python" scheme="http://liwenchuan.cn/tags/Python/"/>
-    
-      <category term="爬虫" scheme="http://liwenchuan.cn/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   

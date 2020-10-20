@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Python 爬虫</title>
+    <title>Python-爬虫</title>
     <url>/2020/07/02/Python-%E7%88%AC%E8%99%AB/</url>
-    <content><![CDATA[<h2 id="url详解："><a href="#url详解：" class="headerlink" title="url详解："></a>url详解：</h2><p>一个URL 由一下几个部分组成：</p>
+    <content><![CDATA[<hr>
+<p>title: Python 爬虫<br>date: 2020-07-02 22:49:06<br>tags:</p>
+<ul>
+<li>Python</li>
+<li>爬虫<br>categories: 程序猿</li>
+</ul>
+<hr>
+<a id="more"></a>
+
+<h2 id="url详解："><a href="#url详解：" class="headerlink" title="url详解："></a>url详解：</h2><p>一个URL 由一下几个部分组成：</p>
 <p>{协议}：//{用户名}:{密码}@{主机名}:{端口号}/{路径}/{文件}?{参数}</p>
 <p><strong>1.</strong>协议部分：该URL的协议部分为“http：”，这代表网页使用的是HTTP协议。在Internet中可以使用多种协议，如HTTP，FTP等等本例中使用的是HTTP协议。在”HTTP”后面的“//”为分隔符</p>
 <p><strong>2.</strong>域名部分：该URL的域名部分为“www.##########.com”。一个URL中，也可以使用IP地址作为域名使用</p>
@@ -13,13 +22,6 @@
 <p><strong>6.</strong>锚部分：从“#”开始到最后，都是锚部分。本例中的锚部分是“name”。锚部分也不是一个URL必须的部分</p>
 <p><strong>7.</strong>参数部分：从“？”开始到“#”为止之间的部分为参数部分，又称搜索部分、查询部分。本例中的参数部分为“boardID=5&amp;ID=24618&amp;page=1”。参数可以允许有多个参数，参数与参数之间用“&amp;”作为分隔符。</p>
 ]]></content>
-      <categories>
-        <category>程序猿</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>爬虫</tag>
-      </tags>
   </entry>
   <entry>
     <title>商务礼仪学习</title>
