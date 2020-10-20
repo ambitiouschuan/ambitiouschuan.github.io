@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://liwenchuan.cn/"/>
-  <updated>2020-06-26T08:42:30.870Z</updated>
+  <updated>2020-07-02T15:50:41.746Z</updated>
   <id>http://liwenchuan.cn/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python 爬虫</title>
+    <link href="http://liwenchuan.cn/2020/07/02/Python-%E7%88%AC%E8%99%AB/"/>
+    <id>http://liwenchuan.cn/2020/07/02/Python-%E7%88%AC%E8%99%AB/</id>
+    <published>2020-07-02T14:49:06.000Z</published>
+    <updated>2020-07-02T15:50:41.746Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="url详解："><a href="#url详解：" class="headerlink" title="url详解："></a>url详解：</h2><p>一个URL 由一下几个部分组成：</p><p>{协议}：//{用户名}:{密码}@{主机名}:{端口号}/{路径}/{文件}?{参数}</p><p><strong>1.</strong>协议部分：该URL的协议部分为“http：”，这代表网页使用的是HTTP协议。在Internet中可以使用多种协议，如HTTP，FTP等等本例中使用的是HTTP协议。在”HTTP”后面的“//”为分隔符</p><p><strong>2.</strong>域名部分：该URL的域名部分为“www.##########.com”。一个URL中，也可以使用IP地址作为域名使用</p><p><strong>3.</strong>端口部分：跟在域名后面的是端口，域名和端口之间使用“:”作为分隔符。端口不是一个URL必须的部分，如果省略端口部分，将采用默认端口</p><p><strong>4.</strong>虚拟目录部分：从域名后的第一个“/”开始到最后一个“/”为止，是虚拟目录部分。虚拟目录也不是一个URL必须的部分。本例中的虚拟目录是“/news/”</p><p><strong>5.</strong>文件名部分：从域名后的最后一个“/”开始到“？”为止，是文件名部分，如果没有“?”,则是从域名后的最后一个“/”开始到“#”为止，是文件部分，如果没有“？”和“#”，那么从域名后的最后一个“/”开始到结束，都是文件名部分。本例中的文件名是“index.asp”。文件名部分也不是一个URL必须的部分，如果省略该部分，则使用默认的文件名</p><p><strong>6.</strong>锚部分：从“#”开始到最后，都是锚部分。本例中的锚部分是“name”。锚部分也不是一个URL必须的部分</p><p><strong>7.</strong>参数部分：从“？”开始到“#”为止之间的部分为参数部分，又称搜索部分、查询部分。本例中的参数部分为“boardID=5&amp;ID=24618&amp;page=1”。参数可以允许有多个参数，参数与参数之间用“&amp;”作为分隔符。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;url详解：&quot;&gt;&lt;a href=&quot;#url详解：&quot; class=&quot;headerlink&quot; title=&quot;url详解：&quot;&gt;&lt;/a&gt;url详解：&lt;/h2&gt;&lt;p&gt;一个URL 由一下几个部分组成：&lt;/p&gt;
+&lt;p&gt;{协议}：//{用户名}:{密码}@{主机名}:{端口号}/{路径}/{文件}?{参数}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt;协议部分：该URL的协议部分为“http：”，这代表网页使用的是HTTP协议。在Internet中可以使用多种协议，如HTTP，FTP等等本例中使用的是HTTP协议。在”HTTP”后面的“//”为分隔符&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt;域名部分：该URL的域名部分为“www.##########.com”。一个URL中，也可以使用IP地址作为域名使用&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt;端口部分：跟在域名后面的是端口，域名和端口之间使用“:”作为分隔符。端口不是一个URL必须的部分，如果省略端口部分，将采用默认端口&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt;虚拟目录部分：从域名后的第一个“/”开始到最后一个“/”为止，是虚拟目录部分。虚拟目录也不是一个URL必须的部分。本例中的虚拟目录是“/news/”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5.&lt;/strong&gt;文件名部分：从域名后的最后一个“/”开始到“？”为止，是文件名部分，如果没有“?”,则是从域名后的最后一个“/”开始到“#”为止，是文件部分，如果没有“？”和“#”，那么从域名后的最后一个“/”开始到结束，都是文件名部分。本例中的文件名是“index.asp”。文件名部分也不是一个URL必须的部分，如果省略该部分，则使用默认的文件名&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6.&lt;/strong&gt;锚部分：从“#”开始到最后，都是锚部分。本例中的锚部分是“name”。锚部分也不是一个URL必须的部分&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;7.&lt;/strong&gt;参数部分：从“？”开始到“#”为止之间的部分为参数部分，又称搜索部分、查询部分。本例中的参数部分为“boardID=5&amp;amp;ID=24618&amp;amp;page=1”。参数可以允许有多个参数，参数与参数之间用“&amp;amp;”作为分隔符。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="程序猿" scheme="http://liwenchuan.cn/categories/%E7%A8%8B%E5%BA%8F%E7%8C%BF/"/>
+    
+    
+      <category term="Python" scheme="http://liwenchuan.cn/tags/Python/"/>
+    
+      <category term="爬虫" scheme="http://liwenchuan.cn/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>商务礼仪学习</title>
@@ -59,31 +92,6 @@
     
     
       <category term="Python" scheme="http://liwenchuan.cn/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>这个初夏，演绎着悲欢离合</title>
-    <link href="http://liwenchuan.cn/2020/06/15/%E8%BF%99%E4%B8%AA%E5%88%9D%E5%A4%8F%EF%BC%8C%E6%BC%94%E7%BB%8E%E7%9D%80%E6%82%B2%E6%AC%A2%E7%A6%BB%E5%90%88/"/>
-    <id>http://liwenchuan.cn/2020/06/15/%E8%BF%99%E4%B8%AA%E5%88%9D%E5%A4%8F%EF%BC%8C%E6%BC%94%E7%BB%8E%E7%9D%80%E6%82%B2%E6%AC%A2%E7%A6%BB%E5%90%88/</id>
-    <published>2020-06-15T04:00:00.000Z</published>
-    <updated>2020-06-22T15:40:20.488Z</updated>
-    
-    <content type="html"><![CDATA[<p>人生就像一场盛大的筵席，总有散的时候。大学这几年也像是一场热闹的宴会，几年前，我们一起赴宴，我们早就已经想过这一天，只是，我们没有想到，这一天来得这么快。。。</p><p>在这个特殊的疫情时期，我们依然毅然决然的选择相聚，为着那临别前的相遇<del>~</del></p><p>（本文有图片，图片较多，加载缓慢，请耐心等待~）</p><a id="more"></a><h4 id="我们毕业啦！"><a href="#我们毕业啦！" class="headerlink" title="我们毕业啦！"></a>我们毕业啦！</h4><p><img src="/uploads/loading.gif" data-original="115.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="116.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="111.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="113.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="112.jpg" alt></p><p>在这个特殊的疫情时期，我们依然毅然决然的选择相聚，为着那临别前的相遇<del>~</del></p><p><img src="/uploads/loading.gif" data-original="114.jpg" alt></p><p>我想，你永远都会记得，16本机设3班，这个班级号。</p><p><img src="/uploads/loading.gif" data-original="117.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="6.jpg" alt></p><h4 id="我的那些兄弟们"><a href="#我的那些兄弟们" class="headerlink" title="我的那些兄弟们"></a>我的那些兄弟们</h4><p>”头号渣男“班长陈茗（PS:毕业最新外号）</p><p><img src="/uploads/loading.gif" data-original="11.jpg" alt></p><p>我们班的仅有的两位美女</p><p><img src="/uploads/loading.gif" data-original="18.jpg" alt></p><p>骚气的日天</p><p><img src="/uploads/loading.gif" data-original="19.jpg" alt></p><p>搞怪的岿岿</p><p><img src="/uploads/loading.gif" data-original="16.jpg" alt></p><p>忧郁的薛明儒</p><p><img src="/uploads/loading.gif" data-original="20.jpg" alt></p><p>曾经的512</p><p><img src="/uploads/loading.gif" data-original="12.jpg" alt></p><p>命运让我们相识，生活又使我们分离。。</p><p><img src="/uploads/loading.gif" data-original="1.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="2.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="3.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="4.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="5.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="9.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="10.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="13.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="14.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="17.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="0.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="23.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="24.jpg" alt></p><h4 id="还记得，那最美的校园风光！"><a href="#还记得，那最美的校园风光！" class="headerlink" title="还记得，那最美的校园风光！"></a>还记得，那最美的校园风光！</h4><p>通往25栋的小路</p><p><img src="/uploads/loading.gif" data-original="21.jpg" alt></p><p>清晨的校园</p><p><img src="/uploads/loading.gif" data-original="%E6%B8%85%E6%99%A8.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="%E6%B8%85%E6%99%A82.jpg" alt></p><p>傍晚的校园</p><p><img src="/uploads/loading.gif" data-original="%E5%82%8D%E6%99%9A.jpg" alt></p><p>雪中的蓝天阁</p><p><img src="/uploads/loading.gif" data-original="%E9%9B%AA.jpg" alt></p><p>雪中的校园</p><p><img src="/uploads/loading.gif" data-original="%E9%9B%AA2.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="%E9%9B%AA3.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="%E9%9B%AA4.jpg" alt></p><p>夜晚的校园</p><p><img src="/uploads/loading.gif" data-original="%E5%A4%9C.jpg" alt></p><p>雨中的校园</p><p><img src="/uploads/loading.gif" data-original="%E9%9B%A8.jpg" alt></p><p>临水广场</p><p><img src="/uploads/loading.gif" data-original="%E4%B8%B4%E6%B0%B4%E5%B9%BF%E5%9C%BA.jpg" alt></p><p>花台</p><p><img src="/uploads/loading.gif" data-original="%E8%8A%B11.jpg" alt></p><p><img src="/uploads/loading.gif" data-original="%E8%8A%B12.jpg" alt></p><p>操场</p><p><img src="/uploads/loading.gif" data-original="%E6%93%8D%E5%9C%BA.jpg" alt></p><p>图书馆对面</p><p><img src="/uploads/loading.gif" data-original="%E5%9B%BE%E4%B9%A6%E9%A6%86.jpg" alt></p><p>上课必经的小树林</p><p><img src="/uploads/loading.gif" data-original="%E4%B8%8A%E8%AF%BE.jpg" alt></p><p>后街的美食圣地</p><p><img src="/uploads/loading.gif" data-original="%E5%90%8E%E8%A1%97.jpg" alt></p><p>太子殿的地铁</p><p><img src="/uploads/loading.gif" data-original="%E5%A4%AA%E5%AD%90%E6%AE%BF.jpg" alt></p><p>学校的地图</p><p><img src="/uploads/loading.gif" data-original="%E5%9C%B0%E5%9B%BE.jpg" alt></p><h4 id="再见！"><a href="#再见！" class="headerlink" title="再见！"></a>再见！</h4><p>在这个阳光热辣的季节里，我们就要分别，为着更好的宴会，为着更好的重逢。</p><p><img src="/uploads/loading.gif" data-original="15.jpg" alt></p><p>兄弟们，江湖再见！</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;人生就像一场盛大的筵席，总有散的时候。大学这几年也像是一场热闹的宴会，几年前，我们一起赴宴，我们早就已经想过这一天，只是，我们没有想到，这一天来得这么快。。。&lt;/p&gt;
-&lt;p&gt;在这个特殊的疫情时期，我们依然毅然决然的选择相聚，为着那临别前的相遇&lt;del&gt;~&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;（本文有图片，图片较多，加载缓慢，请耐心等待~）&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="有个故事，想和你讲" scheme="http://liwenchuan.cn/categories/%E6%9C%89%E4%B8%AA%E6%95%85%E4%BA%8B%EF%BC%8C%E6%83%B3%E5%92%8C%E4%BD%A0%E8%AE%B2/"/>
-    
-    
-      <category term="我们毕业啦！" scheme="http://liwenchuan.cn/tags/%E6%88%91%E4%BB%AC%E6%AF%95%E4%B8%9A%E5%95%A6%EF%BC%81/"/>
     
   </entry>
   
@@ -136,48 +144,6 @@
     
     
       <category term="PLC" scheme="http://liwenchuan.cn/tags/PLC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常识积累</title>
-    <link href="http://liwenchuan.cn/2020/04/28/%E5%B8%B8%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
-    <id>http://liwenchuan.cn/2020/04/28/%E5%B8%B8%E8%AF%86%E7%A7%AF%E7%B4%AF/</id>
-    <published>2020-04-28T02:00:59.000Z</published>
-    <updated>2020-05-03T05:14:03.359Z</updated>
-    
-    <content type="html"><![CDATA[<p>各类常识也要积累起来！</p><a id="more"></a><p>四书，论语，孟子，大学，中庸<br>五经，诗书礼易乐（丢了）春秋<br>六艺，礼乐射，御书数<br>三纲五常，君为臣纲父为子纲夫为妻纲<br>仁义礼智信<br>八股文，破题、承题、起讲、入题、起股、中股、后股、束股</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;各类常识也要积累起来！&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="积累" scheme="http://liwenchuan.cn/tags/%E7%A7%AF%E7%B4%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>成语积累</title>
-    <link href="http://liwenchuan.cn/2020/04/28/%E6%88%90%E8%AF%AD%E7%A7%AF%E7%B4%AF/"/>
-    <id>http://liwenchuan.cn/2020/04/28/%E6%88%90%E8%AF%AD%E7%A7%AF%E7%B4%AF/</id>
-    <published>2020-04-28T01:53:51.000Z</published>
-    <updated>2020-04-28T01:57:50.893Z</updated>
-    
-    <content type="html"><![CDATA[<p>从今天开始，积累一些成语的使用，让自己的语言功底也能慢慢提升！</p><a id="more"></a><p>削足适履：比喻不合理地钱就现成的条件，也指不顾具体条件，生搬硬套。</p><p>无可厚非：说话做事有缺点，但也还有可取之处，应予谅解。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;从今天开始，积累一些成语的使用，让自己的语言功底也能慢慢提升！&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="积累" scheme="http://liwenchuan.cn/tags/%E7%A7%AF%E7%B4%AF/"/>
     
   </entry>
   
